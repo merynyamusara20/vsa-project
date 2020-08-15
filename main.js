@@ -72,9 +72,25 @@ jQuery(document).ready(function(){
         })
   
 
+var selected_country = $('#selected_country');
+var selected_field = $('#selected_field');
 
 
+function filterToggle(type,cls){
+  if(type == 'country'){
+    selected_country.val(cls);
+  }
+  else if(type == 'field'){
+    selected_field.val(cls);
+  }
 
+  if(selected_country.val() === '' || selected_field.val() === ''){
+    $('.mix').hide().filter('.'+cls).fadeIn("10");
+  }
+  else{
+    $('.mix').hide().filter('.'+selected_country.val()).filter('.'+selected_field.val()).fadeIn("10");
+  }
+}
 
 
 

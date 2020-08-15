@@ -21,10 +21,10 @@
         <i class="fas fa-bars"></i>
     </label>
     <ul class="menu">
-        <li> <i class="fas fa-dot"></i><a href="Spotlight.html" >SPOTLIGHT</a></li> 
-        <li> <a href="opportunities.html">OPPORTUNITIES</a></li> 
-        <li> <a href="projects.html" class="active">PROJECTS</a></li> 
-        <li> <a href="blog.html" >BLOG</a></li> 
+        <li> <a href="Spotlight.html" >SPOTLIGHT</a></li> 
+        <li> <a href="opportunities.html"><i class="fas fa-circle"></i> OPPORTUNITIES</a></li> 
+        <li> <a href="projects.html" class="active"><i class="fas fa-circle"></i> PROJECTS</a></li> 
+        <li> <a href="blog.html" ><i class="fas fa-circle"></i> BLOG</a></li> 
         <li> <a href="#footer" >CONTACT</a></li> 
         <label for="chk" class="hide-menu-btn">
             <i class="fas fa-times "></i>
@@ -124,11 +124,11 @@
                           <div class="dropdown-arrow btnn rotate" ></div>
                           <div class="dropdown-menu myText">
                                <div class="controls">
-                                   <a href="javascript:void(0)" type="button" data-filter=".all" class="filter-country"><i class="fas fa-square-o fast fast-1"></i>All</a>
-                                   <a href="javascript:void(0)" type="button" data-filter=".ghana"><i class="fas fa-square-o fast fast-1"></i>Ghana</a>
-                                   <a href="javascript:void(0)"  type="button" data-filter=".cote"><i class="fas fa-square-o  fast fast-1"></i>Cote d'lvoire</a>
-                                   <a href="javascript:void(0)" type="button" data-filter=".egypt" ><i class="fas fa-square-o fast fast-1" ></i>Egypt</a>
-                                   <a href="javascript:void(0)" type="button" data-filter=".south"><i class="fas fa-square-o fast fast-1" ></i> South Africa</a>
+                                   <a href="javascript:void(0)" type="button" onclick="filterToggle('country','all')" class="filter-country"><i class="fas fa-square-o fast fast-1"></i>All</a>
+                                   <a href="javascript:void(0)" type="button" onclick="filterToggle('country','ghana')"><i class="fas fa-square-o fast fast-1"></i>Ghana</a>
+                                   <a href="javascript:void(0)"  type="button" onclick="filterToggle('country','cote')"><i class="fas fa-square-o  fast fast-1"></i>Cote d'lvoire</a>
+                                   <a href="javascript:void(0)" type="button" onclick="filterToggle('country','egypt')"><i class="fas fa-square-o fast fast-1" ></i>Egypt</a>
+                                   <a href="javascript:void(0)" type="button" onclick="filterToggle('country','south')"><i class="fas fa-square-o fast fast-1" ></i> South Africa</a>
                                    <!-- <a href="javascript:void(0)" data-filter="brit"><i class="fas fa-square-o fast" ></i> Britain</a>
                                    <a href="javascript:void(0)" data-filter="ken"><i class="fas fa-square-o fast" ></i> Kenya</a>
                                    <a href="javascript:void(0)" data-filter="swaz"><i class="fas fa-square-o fast" ></i> Swaziland</a>
@@ -143,15 +143,15 @@
                             <div class="dropdown-arrow btnnn rotate"></div>
                             <div class="dropdown-menu Text">
                                 <div>
-                                    <a href="javascript:void(0)" data-filter=".all"   class="bnt">   <i class="fas fa-square-o fast fast-2"></i>All</a>
-                                    <a href="javascript:void(0)" data-filter=".artIn" class="bnt">    <i class="fas fa-square-o fast fast-2"></i>Artificial Intelligence</a>
-                                    <a href="javascript:void(0)" data-filter=".astro"  class="bnt">   <i class="fas fa-square-o fast fast-2"></i> Astronomy</a>
-                                    <a href="javascript:void(0)" data-filter=".phys">                     <i class="fas fa-square-o fast fast-2"></i> Astrophysics</a>
-                                    <a href="javascript:void(0)" data-filter=".biochem"><i class="fas fa-square-o fast fast-2"></i> Biochemistry</a>
-                                    <a href="javascript:void(0)" data-filter=".bio"><i class="fas fa-square-o fast fast-2"></i> Biology</a>
-                                    <a href="javascript:void(0)" data-filter=".bioinfo"><i class="fas fa-square-o fast fast-2"></i> Bioinformics</a>
-                                    <a href="javascript:void(0)" data-filter=".biome"><i class="fas fa-square-o fast fast-2"></i> Biomedicine</a>
-                                    <a href="javascript:void(0)" data-filter="comp"><i class="fas fa-square-o fast fast-2"></i> Computer Science</a>
+                                    <a href="javascript:void(0)" onclick="filterToggle('field','all')"  class="bnt">   <i class="fas fa-square-o fast fast-2"></i>All</a>
+                                    <a href="javascript:void(0)" onclick="filterToggle('field','artIn')" class="bnt">    <i class="fas fa-square-o fast fast-2"></i>Artificial Intelligence</a>
+                                    <a href="javascript:void(0)" onclick="filterToggle('field','astro')"  class="bnt">   <i class="fas fa-square-o fast fast-2"></i> Astronomy</a>
+                                    <a href="javascript:void(0)" onclick="filterToggle('field','phys')">   <i class="fas fa-square-o fast fast-2"></i> Astrophysics</a>
+                                    <a href="javascript:void(0)" onclick="filterToggle('field','biochem')"><i class="fas fa-square-o fast fast-2"></i> Biochemistry</a>
+                                    <a href="javascript:void(0)" onclick="filterToggle('field','bio')"><i class="fas fa-square-o fast fast-2"></i> Biology</a>
+                                    <a href="javascript:void(0)" onclick="filterToggle('field','bioinfo')"><i class="fas fa-square-o fast fast-2"></i> Bioinformics</a>
+                                    <a href="javascript:void(0)" onclick="filterToggle('field','biome')"><i class="fas fa-square-o fast fast-2"></i> Biomedicine</a>
+                                    <a href="javascript:void(0)" onclick="filterToggle('field','comp')"><i class="fas fa-square-o fast fast-2"></i> Computer Science</a>
                                 </div>
                                 <div>
                                     <a href="javascript:void(0)" data-filter=""><i class="fas fa-square-o fast fast-2"></i>Artificial Intelligence</a>
@@ -184,8 +184,8 @@
 <!-- end more spotlights -->
 <!-- start section -->
 <section class="more-cards">
-       <div class="row myCard">
-        <div class="col-md-3 mix egypt all biome">
+  <div class="row myCard">
+      <div class="col-md-3 mix egypt all comp biochem">
             <div class="card ">
               <div class="spotlight-img">
                   <img src="images/laddy.png" alt="SPOTLIGHT">
@@ -198,8 +198,8 @@
                  <h5>#neuroscience</h5>
               </div>
            </div>
-          </div>  
-          <div class="col-md-3 mix cote all">
+       </div>  
+      <div class="col-md-3 mix cote  all comp bio biome">
             <div class="card">
               <div class="spotlight-img">
                   <img src="images/laddy.png" alt="SPOTLIGHT">
@@ -212,8 +212,8 @@
                  <h5> #medicine</h5>
               </div>
            </div>
-          </div>  
-          <div class="col-md-3 mix ghana biome artIn astro all" >
+       </div>  
+      <div class="col-md-3 mix ghana all bio  biochem biome" >
             <div class="card ">
               <div class="spotlight-img">
                   <img src="images/laddy.png" alt="SPOTLIGHT">
@@ -226,8 +226,8 @@
                  <h5>#Cryopreservation</h5>
               </div>
            </div>
-          </div>  
-          <div class="col-md-3 mix south phys all">
+       </div>  
+      <div class="col-md-3 mix south all bio  artIn biome">
             <div class="card">
               <div class="spotlight-img">
                   <img src="images/laddy.png" alt="SPOTLIGHT">
@@ -242,7 +242,7 @@
            </div>
           </div>  
     <!--2end  row  -->
-    <div class="col-md-3 mix egypt all biochem">
+      <div class="col-md-3 mix egypt all comp biochem">
         <div class="card">
           <div class="spotlight-img">
               <img src="images/laddy.png" alt="SPOTLIGHT">
@@ -256,7 +256,7 @@
           </div>
        </div>
       </div>  
-      <div class="col-md-3 mix cote all biome bio">
+      <div class="col-md-3 mix cote  all comp bio biome">
         <div class="card">
           <div class="spotlight-img">
               <img src="images/laddy.png" alt="SPOTLIGHT">
@@ -270,7 +270,7 @@
           </div>
        </div>
       </div>  
-      <div class="col-md-3 mix ghana astro phys all">
+      <div class="col-md-3 mix ghana all bio  bioinfo ">
         <div class="card ">
           <div class="spotlight-img">
               <img src="images/laddy.png" alt="SPOTLIGHT">
@@ -284,7 +284,7 @@
           </div>
        </div>
       </div>  
-      <div class="col-md-3 mix south all bio">
+      <div class="col-md-3 mix south all bio  artIn">
         <div class="card">
           <div class="spotlight-img">
               <img src="images/laddy.png" alt="SPOTLIGHT">
@@ -299,7 +299,7 @@
        </div>
       </div>  
 <!-- 3rd row -->
-<div class="col-md-3 mix egypt all biochem">
+      <div class="col-md-3 mix egypt all comp biochem">
     <div class="card">
       <div class="spotlight-img">
           <img src="images/laddy.png" alt="SPOTLIGHT">
@@ -312,8 +312,8 @@
          <h5>#neuroscience</h5>
       </div>
    </div>
-  </div>  
-  <div class="col-md-3 mix cote all astro">
+      </div>  
+      <div class="col-md-3 mix cote  all comp bio">
     <div class="card">
       <div class="spotlight-img">
           <img src="images/laddy.png" alt="SPOTLIGHT">
@@ -326,8 +326,8 @@
          <h5> #medicine</h5>
       </div>
    </div>
-  </div>  
-  <div class="col-md-3 mix ghana all bio">
+       </div>  
+      <div class="col-md-3 mix ghana all bio  biochem biome">
     <div class="card ">
       <div class="spotlight-img">
           <img src="images/laddy.png" alt="SPOTLIGHT">
@@ -340,8 +340,8 @@
          <h5>#Cryopreservation</h5>
       </div>
    </div>
-  </div>  
-  <div class="col-md-3 mix south all">
+       </div>  
+      <div class="col-md-3 mix south all bio  artIn ">
     <div class="card">
       <div class="spotlight-img">
           <img src="images/laddy.png" alt="SPOTLIGHT">
@@ -354,9 +354,11 @@
          <h5> #Alzeihmers</h5>
       </div>
    </div>
-  </div>  
+       </div>  
     </div>
 </section>
+<input type="hidden" id="selected_country" />
+<input type="hidden" id="selected_field" />
 
 
 <!--START FOOTER -->
@@ -382,7 +384,7 @@
 <script src="vendors/jquery-2.2.4.min.js"></script>
 <script src="popper.js"></script>
 <script src="vendors/bootstrap.min.js"></script>
-<script src="./vendors/mixitup.min.js"></script>
+<script src="vendors/mixitup.min.js"></script>
 <script src="main.js"></script>
 
 </body>

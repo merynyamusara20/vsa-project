@@ -32,10 +32,18 @@ body {
   overflow-x: hidden;
 }
 
+ul {
+  list-style: none;
+}
+
 blockquote:before, blockquote:after,
 q:before, q:after {
   content: '';
   content: none;
+}
+
+output {
+  outline: 0;
 }
 
 html, body {
@@ -122,6 +130,84 @@ a:hover {
   background-color: #3B4C99 !important;
 }
 
+a {
+  text-decoration: none;
+  color: #379937;
+}
+
+.dropdown {
+  position: relative;
+  font-size: 14px;
+  color: #333;
+}
+
+.dropdown .dropdown-list {
+  padding: 12px;
+  background: #fff;
+  position: absolute;
+  top: 30px;
+  left: 2px;
+  right: 2px;
+  -webkit-box-shadow: 0 1px 2px 1px rgba(0, 0, 0, 0.15);
+          box-shadow: 0 1px 2px 1px rgba(0, 0, 0, 0.15);
+  -webkit-transform-origin: 50% 0;
+          transform-origin: 50% 0;
+  -webkit-transform: scale(1, 0);
+          transform: scale(1, 0);
+  -webkit-transition: -webkit-transform .15s ease-in-out .15s;
+  transition: -webkit-transform .15s ease-in-out .15s;
+  transition: transform .15s ease-in-out .15s;
+  transition: transform .15s ease-in-out .15s, -webkit-transform .15s ease-in-out .15s;
+  max-height: 66vh;
+  overflow-y: scroll;
+}
+
+.dropdown .dropdown-option {
+  display: block;
+  padding: 8px 12px;
+  opacity: 0;
+  -webkit-transition: opacity .15s ease-in-out;
+  transition: opacity .15s ease-in-out;
+}
+
+.dropdown .dropdown-label {
+  display: block;
+  width: 10%;
+  height: 30px;
+  background: #fff;
+  border: 1px solid #ccc;
+  padding: 6px 12px;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.dropdown .dropdown-label:before {
+  content: '▼';
+  float: right;
+  color: #3B4C99;
+}
+
+.dropdown.on .dropdown-list {
+  -webkit-transform: scale(1, 1);
+          transform: scale(1, 1);
+  -webkit-transition-delay: 0s;
+          transition-delay: 0s;
+}
+
+.dropdown.on .dropdown-list .dropdown-option {
+  opacity: 1;
+  -webkit-transition-delay: .2s;
+          transition-delay: .2s;
+}
+
+.dropdown.on .dropdown-label:before {
+  content: '▲';
+}
+
+.dropdown [type="checkbox"] {
+  margin-right: 6px;
+}
+
 .header {
   height: 90px;
   background-color: #3B4C99;
@@ -190,6 +276,17 @@ a:hover {
   text-decoration: none;
   font-size: 18px;
   font-family: "Rubik Regular";
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header > ul > li > a > i {
+  font-size: 7px;
+  margin-right: 20px;
 }
 
 .header > ul > li > a:hover {
@@ -484,6 +581,7 @@ a:hover {
   border-radius: 1px;
   border: 1px solid #454545;
   margin-right: 20px;
+  outline: 0;
 }
 
 .inspire > div > div:first-child > form > div > div #email {
@@ -491,6 +589,7 @@ a:hover {
   height: 50px;
   border-radius: 1px;
   border: 1px solid #454545;
+  outline: 0;
 }
 
 .inspire > div > div:first-child > form > div:nth-child(2) {
@@ -509,6 +608,7 @@ a:hover {
   height: 150px;
   width: 552px;
   border-radius: 1px;
+  outline: 0;
 }
 
 .inspire > div > div:first-child > form > a {
@@ -2015,16 +2115,16 @@ a:hover {
     margin-bottom: 50px;
   }
   h1 {
-    font-size: 34px;
+    font-size: 30px;
   }
   h2 {
-    font-size: 25px;
+    font-size: 22px;
   }
   h3 {
     font-size: 19px;
   }
   p {
-    font-size: 16px;
+    font-size: 15px;
   }
   .btn {
     height: 35px;
@@ -2056,14 +2156,14 @@ a:hover {
             flex-direction: column;
     z-index: 999;
   }
-  .header > ul > li {
-    list-style: none;
-  }
   .header > ul > li > a {
     display: block;
     padding: 30px;
     color: #CCE2FF;
     font-size: 18px;
+  }
+  .header > ul > li > a > i {
+    display: none;
   }
   .header > ul > li > a:hover {
     color: #75a1de;
@@ -2089,7 +2189,11 @@ a:hover {
   }
   .billboard {
     height: 650px;
-    padding-top: 160px;
+    padding-top: 120px;
+    overflow-x: hidden;
+  }
+  .billboard .control-prev {
+    width: 30%;
   }
   .billboard > h1 {
     font-size: 28px;
@@ -2118,7 +2222,7 @@ a:hover {
     top: 11.6%;
   }
   .billboard > div > div > div > div > div > div > div > div {
-    width: 124px;
+    width: 110px;
   }
   .billboard > div > div > div > div > div > div > div > div > img {
     width: 100%;
@@ -2128,7 +2232,7 @@ a:hover {
   }
   .billboard > div > div > div > div > div > div > div:last-of-type {
     height: 80px;
-    width: 372px;
+    width: 330px;
     top: -10%;
     left: 0;
     padding: 0 8px;
@@ -2158,7 +2262,7 @@ a:hover {
     width: 24px;
   }
   .about {
-    margin-top: 80px;
+    margin-top: 0;
   }
   .about > div {
     margin: 0 30px;
@@ -2169,6 +2273,8 @@ a:hover {
   .about > div > div:first-child > img {
     width: 100%;
     height: 200px;
+    -o-object-fit: contain;
+       object-fit: contain;
   }
   .about > div > div:last-child {
     display: -webkit-box;
@@ -2207,13 +2313,13 @@ a:hover {
     line-height: 1.2;
   }
   .inspire > div > div:first-child > p {
-    margin: 20px;
+    margin: 20px 10px;
     padding-right: 0;
   }
   .inspire > div > div:first-child > form {
     text-align: center;
-    padding: 0 10px 25px;
-    width: 360px;
+    padding: 0 15px 25px;
+    width: 100%;
     margin: auto;
     -webkit-box-shadow: 0px 0px 5px rgba(168, 168, 168, 0.747);
             box-shadow: 0px 0px 5px rgba(168, 168, 168, 0.747);
@@ -2238,6 +2344,7 @@ a:hover {
     width: 100%;
     height: 40px;
     margin-right: 0;
+    outline: 0;
   }
   .inspire > div > div:first-child > form > div > div #email {
     width: 100%;
@@ -2515,16 +2622,16 @@ a:hover {
     font-size: 16px;
   }
   .Spotlight-billboard {
-    height: 650px;
+    height: 550px;
   }
   .Spotlight-billboard > div > div {
-    padding-top: 200px;
+    padding-top: 150px;
   }
   .Spotlight-billboard > div > div > div:first-child {
     line-height: 1.2;
     margin: auto;
   }
-  .Spotlight-billboard > div > div > div:first-child > H1 {
+  .Spotlight-billboard > div > div > div:first-child > h1 {
     font-size: 44px;
   }
   .Spotlight-billboard > div > div > div:first-child > a {
@@ -2544,28 +2651,35 @@ a:hover {
     right: 0;
     width: 100px;
   }
-  .spotlight-about > div > h2 {
+  .spotlight-about > div .billboard-inner > h2 {
     padding: 0;
-    font-size: 24px;
+    font-size: 20px;
+  }
+  .spotlight-about > div .billboard-inner hr {
+    margin: 50px 0;
   }
   .spotlight-about > div .billboard-inner > p {
     font-size: 15px;
     margin: 30px 0;
   }
   .spotlight-about > div .billboard-inner > div {
-    width: 320px;
+    width: 285px;
     margin: auto;
   }
   .spotlight-about > div .billboard-inner > div > a {
-    font-size: 10px;
+    font-size: 8px;
     width: 60px;
     height: 25px;
   }
+  .spotlight-about > div .billboard-inner > div > div > img {
+    width: 20px;
+    height: 20px;
+  }
   .spotlight-about > div .billboard-inner > div > div > a {
-    font-size: 10px;
+    font-size: 8px;
   }
   .spotlight-about > div .billboard-inner > div > div > li {
-    font-size: 10px;
+    font-size: 8px;
   }
   .more-spotlights > div > div > div {
     text-align: center;
@@ -2580,12 +2694,12 @@ a:hover {
     text-align: left;
   }
   .more-spotlights > div > div > div:last-child > h1 {
-    font-size: 26px;
+    font-size: 22px;
     margin-top: 30px;
   }
   .more-spotlights > div > div > div:last-child > div > p {
-    font-size: 16px;
-    margin: 20px 0 10px;
+    font-size: 15px;
+    margin: 10px 0 15px;
   }
   .more-spotlights > div > div > div:last-child > div form > input {
     width: 100%;
@@ -2605,20 +2719,20 @@ a:hover {
   }
   .more-spotlights > div > div > div:last-child > div > div .user-id .user-name {
     height: 100%;
-    font-size: 18px;
+    font-size: 17px;
     float: left;
     padding: 12px 0 0 12px;
   }
   .more-spotlights > div > div > div:last-child > div > div .user-id .dropdown-arrow {
-    left: 58px;
+    left: 39px;
   }
   .more-spotlights > div > div > div:last-child > div > div .user-id .btnnn {
-    left: 85px;
+    left: 69px;
   }
   .more-spotlights > div > div > div:last-child > div > div .user-id .dropdown-menu {
-    top: 40px;
-    height: 190px;
-    width: 160px;
+    top: 45px;
+    height: 135px;
+    width: 171px;
   }
   .more-spotlights > div > div > div:last-child > div > div .user-id .dropdown-menu > div > a {
     font-size: 10px;
@@ -2631,6 +2745,7 @@ a:hover {
             flex-direction: column;
     height: auto;
     display: none;
+    left: -5%;
   }
   .more-cards > div {
     margin: 0 35px;
@@ -2638,14 +2753,18 @@ a:hover {
   }
   .more-cards > div > div .card {
     margin: 20px auto;
+    width: 100%;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
   }
   .more-cards > div > div .card .spotlight-img > img:first-of-type {
     width: 130px;
     height: 130px;
   }
   .more-cards > div > div .card .spotlight-img > img:last-of-type {
-    height: 60px;
-    width: 60px;
+    height: 50px;
+    width: 50px;
   }
   .more-cards > div > div .card > p {
     font-size: 20px;
@@ -2858,12 +2977,12 @@ a:hover {
   }
   .blog-billboard {
     height: auto;
-    padding-top: 90px;
+    padding-top: 80px;
     padding-bottom: 60px;
   }
   .blog-billboard > img {
     height: 200px;
-    top: 85px;
+    top: 80px;
     left: 0;
     -o-object-fit: contain;
        object-fit: contain;
@@ -2891,12 +3010,12 @@ a:hover {
     text-align: left;
   }
   .blog-billboard > div > div > :last-child > h1 {
-    font-size: 30px;
+    font-size: 28px;
     margin-top: 30px;
   }
   .blog-billboard > div > div > :last-child > p {
     margin-top: 20px;
-    font-size: 18px;
+    font-size: 16px;
   }
   .blog-section h2 {
     font-size: 28px;
@@ -2979,14 +3098,14 @@ a:hover {
             flex-direction: column;
     z-index: 999;
   }
-  .header > ul > li {
-    list-style: none;
-  }
   .header > ul > li > a {
     display: block;
     padding: 30px;
     color: #CCE2FF;
     font-size: 18px;
+  }
+  .header > ul > li > a > i {
+    display: none;
   }
   .header > ul > li > a:hover {
     color: #75a1de;

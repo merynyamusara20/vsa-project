@@ -34,12 +34,13 @@ body {
 	scroll-behavior: smooth;
 	overflow-x: hidden;
 }
-
+ul{list-style: none;}
 blockquote:before, blockquote:after,
 q:before, q:after {
 	content: '';
 	content: none;
 }
+output{outline: 0;}
 html,body{scroll-behavior: smooth;overflow-x: hidden;}
 $darkblue:#3B4C99 ;
 $lightblue: #CCE2FF ;
@@ -67,6 +68,99 @@ a{text-decoration: none;
 	.active-tab{background-color:$darkblue !important;}
 	.active-t{background-color:$darkblue !important;}
 
+
+	  a {
+		text-decoration: none;
+		color: #379937;
+	  }
+	  
+	  .dropdown {
+		position: relative;
+		font-size: 14px;
+		color: #333;
+	  
+		.dropdown-list {
+		  padding: 12px;
+		  background: #fff;
+		  position: absolute;
+		  top: 30px;
+		  left: 2px;
+		  right: 2px;
+		  box-shadow: 0 1px 2px 1px rgba(0, 0, 0, .15);
+		  transform-origin: 50% 0;
+		  transform: scale(1, 0);
+		  transition: transform .15s ease-in-out .15s;
+		  max-height: 66vh;
+		  overflow-y: scroll;
+		}
+		
+		.dropdown-option {
+		  display: block;
+		  padding: 8px 12px;
+		  opacity: 0;
+		  transition: opacity .15s ease-in-out;
+		}
+		
+		.dropdown-label {
+		  display: block;
+		  width: 10%;
+		  height: 30px;
+		  background: #fff;
+		  border: 1px solid #ccc;
+		  padding: 6px 12px;
+		  line-height: 1;
+		  cursor: pointer;
+		  
+		  &:before {
+			content: '▼';
+			float: right;
+		    color: $darkblue;
+		
+		  }
+		}
+		
+		&.on {
+		 .dropdown-list {
+			transform: scale(1, 1);
+			transition-delay: 0s;
+
+			
+			.dropdown-option {
+			  opacity: 1;
+			  transition-delay: .2s;
+			}
+		  }
+		  
+		  .dropdown-label:before {
+			content: '▲';
+		  }
+		}
+		
+		[type="checkbox"] {
+		//   position: relative;
+		//   top: -1px;
+			margin-right: 6px;
+		}
+	  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 	
 	 
 // START NAVBAR
@@ -79,8 +173,9 @@ a{text-decoration: none;
      }
 	>input{position: absolute;visibility: hidden;z-index: -1111;}
 	>ul{display: flex;align-items: center;
-	   >li {padding: 0 30px;color: $white;align-items: center;justify-content: center;
-		   >a{color:$white;transition:0.4s;text-decoration: none;font-size: 18px;font-family: $regular;
+	   >li{padding: 0 30px;color: $white;align-items: center;justify-content: center;
+		   >a{color:$white;transition:0.4s;text-decoration: none;font-size: 18px;font-family: $regular;display: flex;align-items: center;
+			>i{font-size: 7px;margin-right: 20px;}
 			  &:hover{color:$lightblue;text-decoration: none;}}
 			  &:last-of-type{padding: 0 10px;
 				>a{font-size: 19px;height: 50px;width: 149px;@include flex();background-color:#4157AF;border-radius: 6px; }
@@ -141,12 +236,12 @@ a{text-decoration: none;
 					>div{display: flex;
 						label{padding: 27px 0 10px;font-size: 12px;font-family: $regular;}
 						>div{text-align: left;
-						#name{width:232px;height:50px;border-radius: 1px;border: 1px solid $grey;margin-right: 20px;;}
-						#email{width:300px;height: 50px;border-radius: 1px;border: 1px solid $grey;}
+						#name{width:232px;height:50px;border-radius: 1px;border: 1px solid $grey;margin-right: 20px;outline:0;}
+						#email{width:300px;height: 50px;border-radius: 1px;border: 1px solid $grey;outline: 0;}
 					    }
 					}
 					>div:nth-child(2){@include flex-column();text-align: left;width: 100%;
-						>textarea{height: 150px;width:552px;border-radius: 1px}
+						>textarea{height: 150px;width:552px;border-radius: 1px;outline:0;}
 					}
 					>a{margin-left: auto;width: 145px;font-size: 21px;height:50px ;}
 				}
@@ -594,17 +689,18 @@ a{text-decoration: none;
 @media (max-width: 575px) {
 	body{overflow-x: hidden;}
 	section{margin-bottom: 50px;}
-	h1{font-size: 34px;}
-	h2{font-size:25px;}
+	h1{font-size: 30px;}
+	h2{font-size:22px;}
     h3{font-size: 19px;}
-	p{font-size: 16px;}
+	p{font-size: 15px;}
 	.btn{height: 35px;font-size: 15px;border-radius: 3px;width: 180px;margin-top: 15px;}
 // start navbar
 .header{padding: 0 25px;
 	>input:checked ~ .menu{right: 0;z-index: 123;}
 	>ul{position:fixed;width: 100%;height:100%;background-color:$darkblue;right:-100% ;top: 0;padding: 80px 0;transition: 0.7s;flex-direction: column;z-index: 999;;
-		>li{list-style: none;
-		>a{display: block;padding: 30px;color:$lightblue;font-size: 18px;;
+		>li{
+		>a{display: block;padding: 30px;color:$lightblue;font-size: 18px;
+			>i{display: none;}
 			&:hover{color:$blue;}}
 			&:last-of-type{padding: 0 10px;
 				>a{font-size: 18px;height: 40px;width: 149px;padding: 22px;}
@@ -615,7 +711,8 @@ a{text-decoration: none;
 	.hide-menu-btn{position: absolute;top: 35px;right: 28px;color: $blue;}
     }
 // START BILLBOARD
-.billboard{height: 650px;padding-top: 160px;
+.billboard{height: 650px;padding-top: 120px;overflow-x: hidden;;
+	.control-prev{width: 30%;}
 	>h1{font-size: 28px;}
 	>p{font-size: 15px;line-height: 1.2;margin:15px }
 	>div{display: flex;justify-content: center;
@@ -623,9 +720,9 @@ a{text-decoration: none;
 			>div{height: 411px;
 				>img{width: 300px;top: 11.6%;}
 				>div{
-					>div{width:124px;
+					>div{width:110px;
 					    >img{width:100%;height: 330px;object-fit: cover;}}}
-				>div:last-of-type{height: 80px;width:372px;top: -10%;left: 0;padding: 0 8px;
+				>div:last-of-type{height: 80px;width:330px;top: -10%;left: 0;padding: 0 8px;
 					>a{font-size: 10px;height:30px;width:120px;} 
 					>div{flex-direction: column;
 						>li{list-style: none;
@@ -639,10 +736,10 @@ a{text-decoration: none;
     }
 }
 // about
-.about{margin-top:80px ;
+.about{margin-top:0;
 	>div{margin: 0 30px;
 		>div:first-child{margin-bottom: 30px;
-			>img{width:100%;height:200px;}
+			>img{width:100%;height:200px;object-fit: contain;}
 		}
 		>div:last-child{@include flex-column();align-items:center;text-align:center;justify-content: center;
 			>p{padding-left:0;margin: 20px 0;}
@@ -656,12 +753,12 @@ a{text-decoration: none;
 	>div{	
 		>div:first-child{
 			>h2{margin-right:0;line-height: 1.2;}
-			>p{margin: 20px;padding-right:0}
-			>form{text-align: center;padding: 0 10px 25px;width:360px;margin:auto;box-shadow: 0px 0px 5px rgba(168, 168, 168, 0.747);;
+			>p{margin: 20px 10px;padding-right:0}
+			>form{text-align: center;padding: 0 15px 25px;width:100%;margin:auto;box-shadow: 0px 0px 5px rgba(168, 168, 168, 0.747);;
 				>div{display: flex;flex-direction: column;
 					label{padding: 27px 0 10px;font-size: 12px;}
 					>div{text-align: left;;
-					#name{width:100%;height:40px;margin-right:0;}
+					#name{width:100%;height:40px;margin-right:0;outline: 0;}
 					#email{width:100%;height: 40px;}
 					}
 				}
@@ -790,11 +887,11 @@ a{text-decoration: none;
 }
 ///////////////////////START SPOTLIGHT PAGE
 // start Spotlight-billboard
-.Spotlight-billboard{height: 650px;
+.Spotlight-billboard{height: 550px;
 	>div{
-		>div{padding-top: 200px;
+		>div{padding-top: 150px;
 			>div:first-child{line-height: 1.2;margin: auto;
-				>H1{font-size: 44px;}
+				>h1{font-size: 44px;}
 				>a{font-size: 16px;width: 190px;height: 40px;}
 			}
 		}
@@ -805,14 +902,16 @@ a{text-decoration: none;
 	.carousel-control-prev {left:0;width: 100px;}
 	.carousel-control-next{right:0;width: 100px;}
 	>div{
-		>h2{padding: 0 ;font-size: 24px;}
 		.billboard-inner{
+			>h2{padding: 0 ;font-size: 20px;}
+			hr{margin:50px 0}
 			>p{font-size: 15px;margin: 30px 0;}
-			>div{width:320px;margin: auto;
-				>a{font-size: 10px;width: 60px;height: 25px;}
+			>div{width:285px;margin: auto;
+				>a{font-size: 8px;width: 60px;height: 25px;}
 				>div{
-					>a{font-size: 10px;}
-					>li{font-size: 10px;}
+					>img{width: 20px;height: 20px;}
+					>a{font-size: 8px;}
+					>li{font-size: 8px;}
 				
 					
 				}
@@ -828,9 +927,9 @@ a{text-decoration: none;
 				>img{height: 300px;width: 300px;margin-right:0;}
 			}
 			>div:last-child{padding-left:15px;text-align: left;;
-				>h1{font-size: 26px;margin-top: 30px;}
+				>h1{font-size: 22px;margin-top: 30px;}
 				>div{
-					>p{font-size: 16px;margin: 20px 0 10px;}
+					>p{font-size: 15px;margin: 10px 0 15px;}
 					form{
 						>input{width:100%;height: 40px;font-size: 15px;	
 						}
@@ -838,21 +937,21 @@ a{text-decoration: none;
 					}
 					>div{margin: 10px 0;;
 						.user-id {height: 40px;margin-right:2px;;
-							.user-name {height: 100%;font-size:18px;float: left;padding: 12px 0 0 12px;}
-								 .dropdown-arrow {left: 58px;}
-								 .btnnn{left: 85px;}
-								 .dropdown-menu{top:40px;height: 190px;width: 160px;
+							.user-name {height: 100%;font-size:17px;float: left;padding: 12px 0 0 12px;}
+								 .dropdown-arrow {left: 39px;}
+								 .btnnn{left: 69px;}
+								 .dropdown-menu{top:45px;height: 135px;width: 171px;
 									 >div{
 										 >a{font-size: 10px;}}}
-											.Text{width:165px;flex-direction: column;height: auto;display: none;};
+											.Text{width:165px;flex-direction: column;height: auto;display: none;left: -5%;};
 										}}}}}}}
 // more-cards
 .more-cards{
 	>div{margin: 0 35px;padding-top: 5px;;
-		>div .card{margin:20px auto ;
+		>div .card{margin:20px auto;width: 100%;justify-content: space-evenly;
 			.spotlight-img{
 			>img:first-of-type{width: 130px;height: 130px;}
-			>img:last-of-type{height: 60px;width: 60px;}
+			>img:last-of-type{height: 50px;width: 50px;}
 		  }
 		  >p{font-size: 20px;}
 		  >p:last-of-type{font-size: 18px;}
@@ -963,8 +1062,8 @@ a{text-decoration: none;
 
 }
 // start blog billboard
-.blog-billboard{height:auto;padding-top: 90px;padding-bottom: 60px;;
-	>img{height: 200px;top: 85px;left: 0;object-fit: contain;}
+.blog-billboard{height:auto;padding-top: 80px;padding-bottom: 60px;;
+	>img{height: 200px;top: 80px;left: 0;object-fit: contain;}
 	>div{padding-top:0;
 		>div{
 			>div:first-child{
@@ -973,8 +1072,8 @@ a{text-decoration: none;
 				>img{width: 200px;height:220px;object-fit: contain;}
 			}
 			>:last-child{text-align:left;
-				>h1{font-size:30px;margin-top: 30px;}
-			>p{margin-top:20px;font-size: 18px;}}
+				>h1{font-size:28px;margin-top: 30px;}
+			>p{margin-top:20px;font-size: 16px;}}
 		}
 	}	
 }
@@ -1011,8 +1110,9 @@ a{text-decoration: none;
 .header{padding: 0 25px;
 	>input:checked ~ .menu{right: 0;z-index: 123;}
 	>ul{position:fixed;width: 50%;height:100%;background-color:$darkblue;right:-100% ;top: 0;padding: 80px 0;transition: 0.7s;flex-direction: column;z-index: 999;;
-		>li{list-style: none;
-		>a{display: block;padding: 30px;color:$lightblue;font-size: 18px;;
+		>li{
+		>a{display: block;padding: 30px;color:$lightblue;font-size: 18px;
+			>i{display: none;}
 			&:hover{color:$blue;}}
 			&:last-of-type{padding: 0 10px;
 				>a{font-size: 18px;height: 40px;width: 149px;padding: 22px;}

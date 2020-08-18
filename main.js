@@ -99,25 +99,25 @@ function filterToggle(type,cls){
 
 
 
-var selected_country = $('#selected_opportunity-type');
-var selected_field = $('#selected_field');
+// var selected_country = $('#selected_opportunity-type');
+// var selected_field = $('#selected_field');
 
 
-function filterToggle(type,cls){
-  if(type == 'opportunity-type'){
-    selected_opportunity-type.val(cls);
-  }
-  else if(type == 'field'){
-    selected_field.val(cls);
-  }
+// function filterToggle(type,cls){
+//   if(type == 'opportunity-type'){
+//     selected_opportunity-type.val(cls);
+//   }
+//   else if(type == 'field'){
+//     selected_field.val(cls);
+//   }
 
-  if(selected_opportunity-type.val() === '' || selected_field.val() === ''){
-    $('.mix').hide().filter('.'+cls).fadeIn("10");
-  }
-  else{
-    $('.mix').hide().filter('.'+selected_opportunity-type.val()).filter('.'+selected_field.val()).fadeIn("10");
-  }
-}
+//   if(selected_opportunity-type.val() === '' || selected_field.val() === ''){
+//     $('.mix').hide().filter('.'+cls).fadeIn("10");
+//   }
+//   else{
+//     $('.mix').hide().filter('.'+selected_opportunity-type.val()).filter('.'+selected_field.val()).fadeIn("10");
+//   }
+// }
 
 
 

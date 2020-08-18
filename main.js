@@ -32,6 +32,23 @@ jQuery(document).ready(function(){
     });
 });
 
+jQuery(document).ready(function(){
+  jQuery('.fast-3').click(function(event){
+      jQuery('.active-3').removeClass('active-3');
+      jQuery(this).addClass('active-3');
+      event.preventDefault();
+  });
+});
+
+jQuery(document).ready(function(){
+  jQuery('.fast-4').click(function(event){
+      jQuery('.active-4').removeClass('active-4');
+      jQuery(this).addClass('active-4');
+      event.preventDefault();
+  });
+});
+
+
  $(window).load(function(){
         $(".Text").css("display","none");
      });
@@ -90,14 +107,6 @@ function filterToggle(type,cls){
     $('.mix').hide().filter('.'+selected_country.val()).filter('.'+selected_field.val()).fadeIn("10");
   }
 }
-
-
-
-
-
-
-
-
 
 // var selected_country = $('#selected_opportunity-type');
 // var selected_field = $('#selected_field');

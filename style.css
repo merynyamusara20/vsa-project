@@ -130,6 +130,14 @@ a:hover {
   background-color: #3B4C99 !important;
 }
 
+.active-3 {
+  background-color: #3B4C99 !important;
+}
+
+.active-4 {
+  background-color: #3B4C99 !important;
+}
+
 .header {
   height: 90px;
   background-color: #3B4C99;
@@ -3041,6 +3049,95 @@ a:hover {
   .inner-about > div .billboard-inner .inner-about-inner > div > li {
     font-size: 10px;
   }
+  .opportunities-filters {
+    height: 990px;
+    background-position: bottom center;
+  }
+  .opportunities-filters > div > div > div:last-child {
+    padding: 0 10px;
+    text-align: center;
+    width: 100%;
+  }
+  .opportunities-filters > div > div > div:last-child > div {
+    height: 500px;
+    width: 100%;
+    padding-top: 20px;
+    padding-left: 0;
+    padding: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-color: white;
+  }
+  .opportunities-filters > div > div > div:last-child > div > p {
+    font-size: 18px;
+    color: #454545;
+    margin: 25px 0 15px;
+    text-align: left;
+  }
+  .opportunities-filters > div > div > div:last-child > div > div {
+    margin: 10px 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .opportunities-filters > div > div > div:last-child > div > div .user-id {
+    margin-bottom: 50px;
+  }
+  .opportunities-filters > div > div > div:last-child > div > div .user-id .dropdown-arrow {
+    left: 70px;
+  }
+  .opportunities-filters > div > div > div:last-child > div > div .user-id .btnn1 {
+    left: 30px;
+  }
+  .opportunities-filters > div > div > div:last-child > div > div .user-id .btnn2 {
+    left: 117px;
+  }
+  .opportunities-filters > div > div > div:last-child > div > div .user-id .btnnn {
+    left: 137px;
+  }
+  .opportunities-filters > div > div > div:last-child > div > div .user-id .dropdown-menu {
+    height: 193px;
+  }
+  .opportunities-filters > div > div > div:last-child > div > div .user-id .Text {
+    width: 220px;
+    left: 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: auto;
+  }
+  .filter-cards > div > div {
+    width: 100%;
+    height: auto;
+    padding: 30px 18px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .filter-cards > div > div > div:first-child {
+    width: 100%;
+  }
+  .filter-cards > div > div > div:last-child > img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 22px;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
 }
 
 @media (min-width: 568px) and (max-width: 767px) {
@@ -3999,6 +4096,96 @@ a:hover {
   }
   .inner-about > div .billboard-inner .inner-about-inner > div > li {
     font-size: 10px;
+  }
+  .opportunities-filters {
+    height: 990px;
+    background-position: bottom center;
+  }
+  .opportunities-filters > div > div > div:last-child {
+    padding: 0 10px;
+    text-align: center;
+    width: 100%;
+  }
+  .opportunities-filters > div > div > div:last-child > div {
+    height: 500px;
+    width: 100%;
+    padding-top: 20px;
+    padding-left: 0;
+    padding: auto;
+    background: white;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border-radius: 120px 180px;
+  }
+  .opportunities-filters > div > div > div:last-child > div > p {
+    font-size: 18px;
+    color: #454545;
+    margin: 25px 0 15px;
+    text-align: left;
+  }
+  .opportunities-filters > div > div > div:last-child > div > div {
+    margin: 10px 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .opportunities-filters > div > div > div:last-child > div > div .user-id {
+    margin-bottom: 50px;
+  }
+  .opportunities-filters > div > div > div:last-child > div > div .user-id .dropdown-arrow {
+    left: 70px;
+  }
+  .opportunities-filters > div > div > div:last-child > div > div .user-id .btnn1 {
+    left: 30px;
+  }
+  .opportunities-filters > div > div > div:last-child > div > div .user-id .btnn2 {
+    left: 117px;
+  }
+  .opportunities-filters > div > div > div:last-child > div > div .user-id .btnnn {
+    left: 137px;
+  }
+  .opportunities-filters > div > div > div:last-child > div > div .user-id .dropdown-menu {
+    height: 193px;
+  }
+  .opportunities-filters > div > div > div:last-child > div > div .user-id .Text {
+    width: 220px;
+    left: 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: auto;
+  }
+  .filter-cards > div > div {
+    width: 100%;
+    height: auto;
+    padding: 30px 18px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .filter-cards > div > div > div:first-child {
+    width: 100%;
+  }
+  .filter-cards > div > div > div:last-child > img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 22px;
+    -o-object-fit: contain;
+       object-fit: contain;
   }
 }
 
@@ -4962,6 +5149,127 @@ a:hover {
   .inner-about > div .billboard-inner .inner-about-inner > div > li {
     font-size: 14px;
   }
+  .opportunities-filters {
+    background-size: cover;
+    background-position: bottom center;
+    height: 700px;
+  }
+  .opportunities-filters > div {
+    height: 100%;
+  }
+  .opportunities-filters > div > div > div:last-child {
+    padding-left: 30px;
+    text-align: center;
+  }
+  .opportunities-filters > div > div > div:last-child h1 {
+    color: #3B4C99;
+  }
+  .opportunities-filters > div > div > div:last-child > div {
+    padding-top: 25px;
+    padding-left: 30px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    -webkit-box-pack: inherit;
+        -ms-flex-pack: inherit;
+            justify-content: inherit;
+    -webkit-box-align: inherit;
+        -ms-flex-align: inherit;
+            align-items: inherit;
+    width: 100%;
+  }
+  .opportunities-filters > div > div > div:last-child > div > p {
+    font-size: 16px;
+    margin: 10px 0 5px;
+  }
+  .opportunities-filters > div > div > div:last-child > div > div {
+    margin: 5px 0;
+  }
+  .opportunities-filters > div > div > div:last-child > div > div .user-id {
+    height: 40px;
+    width: 150px;
+  }
+  .opportunities-filters > div > div > div:last-child > div > div .user-id .user-name {
+    height: 100%;
+    font-size: 13px;
+    float: left;
+    padding: 12px 0 0 12px;
+  }
+  .opportunities-filters > div > div > div:last-child > div > div .user-id .dropdown-arrow {
+    left: 37px;
+  }
+  .opportunities-filters > div > div > div:last-child > div > div .user-id .btnn1 {
+    left: 10px;
+  }
+  .opportunities-filters > div > div > div:last-child > div > div .user-id .btnn2 {
+    left: 70px;
+  }
+  .opportunities-filters > div > div > div:last-child > div > div .user-id .btnnn {
+    left: 85px;
+  }
+  .opportunities-filters > div > div > div:last-child > div > div .user-id .dropdown-menu {
+    width: 190px;
+    top: 38px;
+    padding: 0;
+    height: 165px;
+  }
+  .opportunities-filters > div > div > div:last-child > div > div .user-id .dropdown-menu > div {
+    padding: 5px 10px;
+  }
+  .opportunities-filters > div > div > div:last-child > div > div .user-id .dropdown-menu > div > a {
+    font-size: 10px;
+    padding: 2px 0;
+  }
+  .opportunities-filters > div > div > div:last-child > div > div .user-id .Text {
+    width: 480px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    left: -329px;
+  }
+  .filter-cards > div > div {
+    height: 300px;
+    margin-bottom: 60px;
+    width: 100%;
+  }
+  .filter-cards > div > div > div:first-child {
+    width: 60%;
+  }
+  .filter-cards > div > div > div:first-child > p {
+    font-size: 15px;
+    margin: 22px 0;
+  }
+  .filter-cards > div > div > div:last-child > img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 22px;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .filter-cards #showLess {
+    display: none;
+    -webkit-transition: ease-in-out 2s;
+    transition: ease-in-out 2s;
+  }
+  .filter-cards .btn-load {
+    color: #3B4C99;
+    font-size: 12px;
+    border: 1px solid #3B4C99;
+    border-radius: 80px;
+    width: 146px;
+    height: 146px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: auto;
+    margin-bottom: 80px;
+    font-family: "Rubik Bold";
+  }
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
@@ -5099,20 +5407,20 @@ a:hover {
     padding: 0 30px;
   }
   .header > div > a {
-    font-size: 16px;
+    font-size: 17px;
     padding-left: 8px;
   }
   .header > ul > li {
     padding: 0 15px;
   }
   .header > ul > li > a {
-    font-size: 18px;
+    font-size: 16px;
   }
   .header > ul > li:last-of-type {
     padding: 0 10px;
   }
   .header > ul > li:last-of-type > a {
-    font-size: 20px;
+    font-size: 19px;
     width: 140px;
   }
   .about-billboard {
@@ -5607,6 +5915,124 @@ a:hover {
   .blog-section .btn-load {
     width: 130px;
     height: 130px;
+  }
+  .opportunities-filters {
+    background-size: cover;
+    background-position: bottom center;
+    height: 750px;
+  }
+  .opportunities-filters > div {
+    height: 100%;
+  }
+  .opportunities-filters > div > div > div:last-child {
+    padding-left: 5px;
+    text-align: center;
+  }
+  .opportunities-filters > div > div > div:last-child > p {
+    font-size: 18px;
+  }
+  .opportunities-filters > div > div > div:last-child > div {
+    padding-top: 40px;
+    padding-left: 60px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    -webkit-box-pack: inherit;
+        -ms-flex-pack: inherit;
+            justify-content: inherit;
+    -webkit-box-align: inherit;
+        -ms-flex-align: inherit;
+            align-items: inherit;
+    width: 100%;
+  }
+  .opportunities-filters > div > div > div:last-child > div > p {
+    font-size: 18px;
+    margin: 10px 0 5px;
+  }
+  .opportunities-filters > div > div > div:last-child > div > div {
+    margin: 25px 0;
+  }
+  .opportunities-filters > div > div > div:last-child > div > div .user-id {
+    height: 45px;
+    width: 200px;
+  }
+  .opportunities-filters > div > div > div:last-child > div > div .user-id .user-name {
+    height: 100%;
+    font-size: 15px;
+    float: left;
+    padding: 12px 0 0 12px;
+  }
+  .opportunities-filters > div > div > div:last-child > div > div .user-id .dropdown-arrow {
+    left: 75px;
+  }
+  .opportunities-filters > div > div > div:last-child > div > div .user-id .btnn1 {
+    left: 42px;
+  }
+  .opportunities-filters > div > div > div:last-child > div > div .user-id .btnn2 {
+    left: 112px;
+  }
+  .opportunities-filters > div > div > div:last-child > div > div .user-id .btnnn {
+    left: 130px;
+  }
+  .opportunities-filters > div > div > div:last-child > div > div .user-id .dropdown-menu {
+    width: 200px;
+    top: 50px;
+    padding: 0;
+    height: 190px;
+  }
+  .opportunities-filters > div > div > div:last-child > div > div .user-id .dropdown-menu > div > a {
+    font-size: 11px;
+    padding: 3px 0;
+  }
+  .opportunities-filters > div > div > div:last-child > div > div .user-id .Text {
+    width: 480px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    left: -283px;
+  }
+  .filter-cards > div > div {
+    height: 330px;
+    margin-bottom: 60px;
+    width: 100%;
+  }
+  .filter-cards > div > div > div:first-child {
+    width: 60%;
+  }
+  .filter-cards > div > div > div:first-child > p {
+    font-size: 15px;
+    margin: 22px 0;
+  }
+  .filter-cards > div > div > div:last-child > img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 22px;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .filter-cards #showLess {
+    display: none;
+    -webkit-transition: ease-in-out 2s;
+    transition: ease-in-out 2s;
+  }
+  .filter-cards .btn-load {
+    color: #3B4C99;
+    font-size: 12px;
+    border: 1px solid #3B4C99;
+    border-radius: 80px;
+    width: 146px;
+    height: 146px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: auto;
+    margin-bottom: 80px;
+    font-family: "Rubik Bold";
   }
 }
 

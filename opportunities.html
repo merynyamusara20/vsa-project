@@ -48,16 +48,11 @@
                           <div class="dropdown-arrow btnn rotate" ></div>
                           <div class="dropdown-menu myText" >
                                <div class="controls">
-                                <a href="javascript:void(0)" type="button" data-filter="all"><i class="fas fa-square-o fast fast-1"></i>All</a>
-                                <a href="javascript:void(0)" type="button" data-sort="default:asc" data-filter=".one"><i class="fas fa-square-o fast fast-1"></i>Ghana</a>
-                                <a href="javascript:void(0)" type="button" data-sort="default:asc" data-filter=".bho"><i class="fas fa-square-o  fast fast-1"></i>Cote d'lvoire</a>
-                                <a href="javascript:void(0)" type="button" data-sort="default:asc" data-filter=".bko"><i class="fas fa-square-o fast fast-1" ></i>Egypt</a>
-                                <a href="javascript:void(0)" type="button" data-sort="default:asc" data-filter=".loo"><i class="fas fa-square-o fast fast-1" ></i> South Africa</a>
-                                
-                                   <!-- <a href="javascript:void(0)" data-filter="brit"><i class="fas fa-square-o fast" ></i> Britain</a>
-                                   <a href="javascript:void(0)" data-filter="ken"><i class="fas fa-square-o fast" ></i> Kenya</a>
-                                   <a href="javascript:void(0)" data-filter="swaz"><i class="fas fa-square-o fast" ></i> Swaziland</a>
-                                   <a href="javascript:void(0)" data-filter="bra"><i class="fas fa-square-o fast" ></i> Brazil</a> -->
+                                <a href="javascript:void(0)" type="button"  onclick="filterToggle('career-level','all')" ><i class="fas fa-square-o fast fast-1"></i>All</a>
+                                <a href="javascript:void(0)" type="button"  onclick="filterToggle('career-level','all')"><i class="fas fa-square-o fast fast-1"></i>one</a>
+                                <a href="javascript:void(0)" type="button"  onclick="filterToggle('career-level','all')"><i class="fas fa-square-o  fast fast-1"></i>two</a>
+                                <a href="javascript:void(0)" type="button"  onclick="filterToggle('career-level','all')"><i class="fas fa-square-o fast fast-1" ></i>three</a>
+                                <a href="javascript:void(0)" type="button"  onclick="filterToggle('career-level','all')"><i class="fas fa-square-o fast fast-1" ></i>four</a>
                                </div>
                           </div>
                          </div>
@@ -67,15 +62,14 @@
                             <div class="dropdown-arrow btnn1 rotate" ></div>
                             <div class="dropdown-menu myText1">
                                  <div>
-                                     <a href="javascript:void(0)" data-filter="All" class="filter-country"><i class="fas fa-square-o fast fast-1"></i>All</a>
-                                     <a href="javascript:void(0)" data-filter="cote" class="filter-country"><i class="fas fa-square-o fast fast-1"></i>Ghana</a>
-                                     <a href="javascript:void(0)" data-filter="egypt" class="filter-country"><i class="fas fa-square-o  fast fast-1"></i>Cote d'lvoire</a>
-                                     <a href="javascript:void(0)" data-filter="ghana" class="filter-country"><i class="fas fa-square-o fast fast-1" ></i>Egypt</a>
-                                     <a href="javascript:void(0)" data-filter="south" class="filter-country"><i class="fas fa-square-o fast fast-1" ></i> South Africa</a>
-                                     <!-- <a href="javascript:void(0)" data-filter="brit"><i class="fas fa-square-o fast" ></i> Britain</a>
-                                     <a href="javascript:void(0)" data-filter="ken"><i class="fas fa-square-o fast" ></i> Kenya</a>
-                                     <a href="javascript:void(0)" data-filter="swaz"><i class="fas fa-square-o fast" ></i> Swaziland</a>
-                                     <a href="javascript:void(0)" data-filter="bra"><i class="fas fa-square-o fast" ></i> Brazil</a> -->
+                                     <a href="javascript:void(0)" onclick="filterToggle('opp-type','all')">        <i class="fas fa-square-o fast fast-1"></i>All</a>
+                                     <a href="javascript:void(0)" onclick="filterToggle('opp-type','award')">      <i class="fas fa-square-o fast fast-1"></i>Award</a>
+                                     <a href="javascript:void(0)" onclick="filterToggle('opp-type','grant')">      <i class="fas fa-square-o fast fast-1"></i>Grant</a>
+                                     <a href="javascript:void(0)" onclick="filterToggle('opp-type','grant')">    <i class="fas fa-square-o fast fast-1" ></i>Funding</a>
+                                     <a href="javascript:void(0)" onclick="filterToggle('opp-type','grant')"> <i class="fas fa-square-o fast fast-1" ></i>Fellowship</a>
+                                     <a href="javascript:void(0)" onclick="filterToggle('opp-type','training')">   <i class="fas fa-square-o fast fast-1" ></i>Training</a>
+                                     <a href="javascript:void(0)" onclick="filterToggle('opp-type','internship')"> <i class="fas fa-square-o fast fast-1" ></i>Internship</a>
+                                     <a href="javascript:void(0)" onclick="filterToggle('opp-type','mentorship')"> <i class="fas fa-square-o fast fast-1" ></i>Mentorship</a>
                                  </div>
                             </div>
                            </div>
@@ -85,15 +79,10 @@
                             <div class="dropdown-arrow btnn2 rotate" ></div>
                             <div class="dropdown-menu myText2">
                                  <div>
-                                     <a href="javascript:void(0)" data-filter="All" class="filter-country"><i class="fas fa-square-o fast fast-1"></i>All</a>
-                                     <a href="javascript:void(0)" data-filter="cote" class="filter-country"><i class="fas fa-square-o fast fast-1"></i>Ghana</a>
-                                     <a href="javascript:void(0)" data-filter="egypt" class="filter-country"><i class="fas fa-square-o  fast fast-1"></i>Cote d'lvoire</a>
-                                     <a href="javascript:void(0)" data-filter="ghana" class="filter-country"><i class="fas fa-square-o fast fast-1" ></i>Egypt</a>
-                                     <a href="javascript:void(0)" data-filter="south" class="filter-country"><i class="fas fa-square-o fast fast-1" ></i> South Africa</a>
-                                     <!-- <a href="javascript:void(0)" data-filter="brit"><i class="fas fa-square-o fast" ></i> Britain</a>
-                                     <a href="javascript:void(0)" data-filter="ken"><i class="fas fa-square-o fast" ></i> Kenya</a>
-                                     <a href="javascript:void(0)" data-filter="swaz"><i class="fas fa-square-o fast" ></i> Swaziland</a>
-                                     <a href="javascript:void(0)" data-filter="bra"><i class="fas fa-square-o fast" ></i> Brazil</a> -->
+                                     <a href="javascript:void(0)" onclick="filterToggle('opp-type','all')" ><i class="fas fa-square-o fast fast-1"></i>All</a>
+                                     <a href="javascript:void(0)" onclick="filterToggle('opp-type','africa')" ><i class="fas fa-square-o fast fast-1"></i>Africa</a>
+                                     <a href="javascript:void(0)" onclick="filterToggle('opp-type','united-states')" ><i class="fas fa-square-o  fast fast-1"></i>United States of Amarica</a>
+
                                  </div>
                             </div>
                            </div>
@@ -103,35 +92,37 @@
                             <div class="dropdown-arrow btnnn rotate"></div>
                             <div class="dropdown-menu Text menu2">
                                 <div>
-                                    <a href="javascript:void(0)" data-filter="Alll" class="bnt"><i class="fas fa-square-o fast fast-2"></i>All</a>
-                                    <a href="javascript:void(0)"  data-filter="astro" class="bnt"><i class="fas fa-square-o fast fast-2"></i>Artificial Intelligence</a>
-                                    <a href="javascript:void(0)" data-filter="agric" class="bnt"><i class="fas fa-square-o fast fast-2"></i> Astronomy</a>
-                                    <a href="javascript:void(0)" data-filter=""><i class="fas fa-square-o fast fast-2"></i> Astrophysics</a>
-                                    <a href="javascript:void(0)" data-filter=""><i class="fas fa-square-o fast fast-2"></i> Biochemistry</a>
-                                    <a href="javascript:void(0)" data-filter=""><i class="fas fa-square-o fast fast-2"></i> Biology</a>
-                                    <a href="javascript:void(0)" data-filter=""><i class="fas fa-square-o fast fast-2"></i> Bioinformics</a>
-                                    <a href="javascript:void(0)" data-filter=""><i class="fas fa-square-o fast fast-2"></i> Biomedicine</a>
-                                    <a href="javascript:void(0)" data-filter=""><i class="fas fa-square-o fast fast-2"></i> Computer Science</a>
+                                    <a href="javascript:void(0)" onclick="filterToggle('region','all')"  class="bnt">   <i class="fas fa-square-o fast fast-2"></i>All</a>
+                                    <a href="javascript:void(0)" onclick="filterToggle('region','artIn')" class="bnt">    <i class="fas fa-square-o fast fast-2"></i>Artificial Intelligence</a>
+                                    <a href="javascript:void(0)" onclick="filterToggle('region','astro')"  class="bnt">   <i class="fas fa-square-o fast fast-2"></i> Astronomy</a>
+                                    <a href="javascript:void(0)" onclick="filterToggle('region','phys')">   <i class="fas fa-square-o fast fast-2"></i> Astrophysics</a>
+                                    <a href="javascript:void(0)" onclick="filterToggle('region','biochem')"><i class="fas fa-square-o fast fast-2"></i> Biochemistry</a>
+                                    <a href="javascript:void(0)" onclick="filterToggle('region','bio')"><i class="fas fa-square-o fast fast-2"></i> Biology</a>
+                                    <a href="javascript:void(0)" onclick="filterToggle('region','bioinfo')"><i class="fas fa-square-o fast fast-2"></i> Bioinformics</a>
+                                    <a href="javascript:void(0)" onclick="filterToggle('region','biome')"><i class="fas fa-square-o fast fast-2"></i> Biomedicine</a>
+                                    <a href="javascript:void(0)" onclick="filterToggle('region','comp')"><i class="fas fa-square-o fast fast-2"></i> Computer Science</a>
                                 </div>
                                 <div>
-                                    <a href="javascript:void(0)" data-filter=""><i class="fas fa-square-o fast fast-2"></i>Artificial Intelligence</a>
-                                    <a href="javascript:void(0)" data-filter=""><i class="fas fa-square-o fast fast-2"></i> Astronomy</a>
-                                    <a href="javascript:void(0)" data-filter=""><i class="fas fa-square-o fast fast-2"></i> Astrophysics</a>
-                                    <a href="javascript:void(0)" data-filter=""><i class="fas fa-square-o fast fast-2"></i> Biochemistry</a>
-                                    <a href="javascript:void(0)" data-filter=""><i class="fas fa-square-o fast fast-2"></i> Biology</a>
-                                    <a href="javascript:void(0)" data-filter=""><i class="fas fa-square-o fast fast-2"></i> Bioinformics</a>
-                                    <a href="javascript:void(0)" data-filter=""><i class="fas fa-square-o fast fast-2"></i> Biomedicine</a>
-                                    <a href="javascript:void(0)" data-filter=""><i class="fas fa-square-o fast fast-2"></i> Computer Science</a>
+                                    <a href="javascript:void(0)" onclick="filterToggle('field','all')"  class="bnt">   <i class="fas fa-square-o fast fast-2"></i>All</a>
+                                    <a href="javascript:void(0)" onclick="filterToggle('field','artIn')" class="bnt">    <i class="fas fa-square-o fast fast-2"></i>Artificial Intelligence</a>
+                                    <a href="javascript:void(0)" onclick="filterToggle('field','astro')"  class="bnt">   <i class="fas fa-square-o fast fast-2"></i> Astronomy</a>
+                                    <a href="javascript:void(0)" onclick="filterToggle('field','phys')">   <i class="fas fa-square-o fast fast-2"></i> Astrophysics</a>
+                                    <a href="javascript:void(0)" onclick="filterToggle('field','biochem')"><i class="fas fa-square-o fast fast-2"></i> Biochemistry</a>
+                                    <a href="javascript:void(0)" onclick="filterToggle('field','bio')"><i class="fas fa-square-o fast fast-2"></i> Biology</a>
+                                    <a href="javascript:void(0)" onclick="filterToggle('field','bioinfo')"><i class="fas fa-square-o fast fast-2"></i> Bioinformics</a>
+                                    <a href="javascript:void(0)" onclick="filterToggle('field','biome')"><i class="fas fa-square-o fast fast-2"></i> Biomedicine</a>
+                                    <a href="javascript:void(0)" onclick="filterToggle('field','comp')"><i class="fas fa-square-o fast fast-2"></i> Computer Science</a>
                                 </div>
                                 <div>
-                                    <a href="javascript:void(0)"><i class="fas fa-square-o fast fast-2"></i>Artificial Intelligence</a>
-                                    <a href="javascript:void(0)"><i class="fas fa-square-o fast fast-2"></i> Astronomy</a>
-                                    <a href="javascript:void(0)"><i class="fas fa-square-o fast fast-2"></i> Astrophysics</a>
-                                    <a href="javascript:void(0)"><i class="fas fa-square-o fast fast-2"></i> Biochemistry</a>
-                                    <a href="javascript:void(0)"><i class="fas fa-square-o fast fast-2 "></i> Biology</a>
-                                    <a href="javascript:void(0)"><i class="fas fa-square-o fast fast-2"></i> Bioinformics</a>
-                                    <a href="javascript:void(0)"><i class="fas fa-square-o fast fast-2"></i> Biomedicine</a>
-                                    <a href="javascript:void(0)"><i class="fas fa-square-o fast fast-2"></i> Computer Science</a>
+                                    <a href="javascript:void(0)" onclick="filterToggle('field','all')"  class="bnt">   <i class="fas fa-square-o fast fast-2"></i>All</a>
+                                    <a href="javascript:void(0)" onclick="filterToggle('field','artIn')" class="bnt">    <i class="fas fa-square-o fast fast-2"></i>Artificial Intelligence</a>
+                                    <a href="javascript:void(0)" onclick="filterToggle('field','astro')"  class="bnt">   <i class="fas fa-square-o fast fast-2"></i> Astronomy</a>
+                                    <a href="javascript:void(0)" onclick="filterToggle('field','phys')">   <i class="fas fa-square-o fast fast-2"></i> Astrophysics</a>
+                                    <a href="javascript:void(0)" onclick="filterToggle('field','biochem')"><i class="fas fa-square-o fast fast-2"></i> Biochemistry</a>
+                                    <a href="javascript:void(0)" onclick="filterToggle('field','bio')"><i class="fas fa-square-o fast fast-2"></i> Biology</a>
+                                    <a href="javascript:void(0)" onclick="filterToggle('field','bioinfo')"><i class="fas fa-square-o fast fast-2"></i> Bioinformics</a>
+                                    <a href="javascript:void(0)" onclick="filterToggle('field','biome')"><i class="fas fa-square-o fast fast-2"></i> Biomedicine</a>
+                                    <a href="javascript:void(0)" onclick="filterToggle('field','comp')"><i class="fas fa-square-o fast fast-2"></i> Computer Science</a>
                                 </div>
                             </div>
                            </div>
@@ -143,9 +134,7 @@
 </section>
 <section class="filter-cards">
     <div class="container myCard" >
-       
-        
-        <div class="cards mix one" data-pamba="U">
+        <div class="cards mix all award" >
             <div>
                 <h3>AFRICA SCHOLARSHIP TO UNITED STATES</h3>
                 <p>This program was set up to assist undergraduate and postgraduate
@@ -164,7 +153,7 @@
                 <h5>#ComputerScience</h5>   
             </div>
         </div>
-        <div class="cards mix bko" data-pamba="A">
+        <div class="cards mix all grant" >
             <div>
                 <h3>UNITED STATES SCHOLARSHIP TO AFRICA</h3>
                 <p>This program was set up to assist undergraduate and postgraduate
@@ -184,7 +173,7 @@
                 <h5>#Astronomy</h5>    
             </div>
         </div>
-        <div class="cards mix one" data-pamba="T">
+        <div class="cards mix all grant" >
             <div>
                 <h3>THE WELLCOME TRUST</h3>
                 <p>This program was set up to assist undergraduate and postgraduate
@@ -204,7 +193,7 @@
                 <h5> #ComputerScience </h5>  
             </div>
         </div>
-        <div class="cards mix loo" data-pamba="A">
+        <div class="cards mix all grant" >
             <div>
                 <h3>ASSOCIATION OF AFRICAN UNIVERSITIES</h3>
                 <p>This program was set up to assist undergraduate and postgraduate
@@ -224,7 +213,7 @@
                 <h5> #ComputerScience </h5>  
             </div>
         </div>
-        <div class="cards mix loo" data-pamba="D">
+        <div class="cards mix all internship" >
             <div>
                 <h3>DORCAS MUTHONI PHD FELLOWSHIP</h3>
                 <p>This program was set up to assist undergraduate and postgraduate
@@ -244,7 +233,7 @@
                 <h5> #ComputerScience </h5>  
             </div>
         </div>
-        <div class="cards mix bko" data-pamba="A">
+        <div class="cards mix all africa mentorship" >
             <div>
                 <h3>AFRICA RESEARCH EXCELLENCE FUND</h3>
                 <p>This program was set up to assist undergraduate and postgraduate
@@ -264,7 +253,7 @@
                 <h5> #ComputerScience </h5>  
             </div>
         </div>
-        <div class="cards mix bko" data-pamba="A">
+        <div class="cards mix all africa" >
             <div>
                 <h3>AFRICA RESEARCH EXCELLENCE FUND</h3>
                 <p>This program was set up to assist undergraduate and postgraduate
@@ -284,7 +273,7 @@
                 <h5> #ComputerScience </h5>  
             </div>
         </div>
-        <div class="cards mix bko" data-pamba="A">
+        <div class="cards mix all africa" >
             <div>
                 <h3>AFRICA RESEARCH EXCELLENCE FUND</h3>
                 <p>This program was set up to assist undergraduate and postgraduate
@@ -308,7 +297,8 @@
     <div id="loadMore me"><a href="javascript:void(0)" class=" btn-load">LOAD MORE</a></div>
     <div id="showLess"><a href="javascript:void(0)" class=" btn-load">LOAD LESS</a></div>
 </section>
-
+<input type="hidden" id="selected_opportunity-type" />
+<input type="hidden" id="selected_field" />
 
 
 

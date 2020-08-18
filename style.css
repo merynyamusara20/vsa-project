@@ -130,84 +130,6 @@ a:hover {
   background-color: #3B4C99 !important;
 }
 
-a {
-  text-decoration: none;
-  color: #379937;
-}
-
-.dropdown {
-  position: relative;
-  font-size: 14px;
-  color: #333;
-}
-
-.dropdown .dropdown-list {
-  padding: 12px;
-  background: #fff;
-  position: absolute;
-  top: 30px;
-  left: 2px;
-  right: 2px;
-  -webkit-box-shadow: 0 1px 2px 1px rgba(0, 0, 0, 0.15);
-          box-shadow: 0 1px 2px 1px rgba(0, 0, 0, 0.15);
-  -webkit-transform-origin: 50% 0;
-          transform-origin: 50% 0;
-  -webkit-transform: scale(1, 0);
-          transform: scale(1, 0);
-  -webkit-transition: -webkit-transform .15s ease-in-out .15s;
-  transition: -webkit-transform .15s ease-in-out .15s;
-  transition: transform .15s ease-in-out .15s;
-  transition: transform .15s ease-in-out .15s, -webkit-transform .15s ease-in-out .15s;
-  max-height: 66vh;
-  overflow-y: scroll;
-}
-
-.dropdown .dropdown-option {
-  display: block;
-  padding: 8px 12px;
-  opacity: 0;
-  -webkit-transition: opacity .15s ease-in-out;
-  transition: opacity .15s ease-in-out;
-}
-
-.dropdown .dropdown-label {
-  display: block;
-  width: 10%;
-  height: 30px;
-  background: #fff;
-  border: 1px solid #ccc;
-  padding: 6px 12px;
-  line-height: 1;
-  cursor: pointer;
-}
-
-.dropdown .dropdown-label:before {
-  content: '▼';
-  float: right;
-  color: #3B4C99;
-}
-
-.dropdown.on .dropdown-list {
-  -webkit-transform: scale(1, 1);
-          transform: scale(1, 1);
-  -webkit-transition-delay: 0s;
-          transition-delay: 0s;
-}
-
-.dropdown.on .dropdown-list .dropdown-option {
-  opacity: 1;
-  -webkit-transition-delay: .2s;
-          transition-delay: .2s;
-}
-
-.dropdown.on .dropdown-label:before {
-  content: '▲';
-}
-
-.dropdown [type="checkbox"] {
-  margin-right: 6px;
-}
-
 .header {
   height: 90px;
   background-color: #3B4C99;
@@ -1716,6 +1638,9 @@ a {
   width: 383px;
   left: 74%;
   z-index: 234;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .projects-billboard > img:last-of-type {
@@ -2115,13 +2040,13 @@ a {
     margin-bottom: 50px;
   }
   h1 {
-    font-size: 30px;
+    font-size: 25px;
   }
   h2 {
-    font-size: 22px;
+    font-size: 20px;
   }
   h3 {
-    font-size: 19px;
+    font-size: 18px;
   }
   p {
     font-size: 15px;
@@ -2451,25 +2376,28 @@ a {
   .about-billboard {
     padding-top: 0;
     text-align: center;
-    margin-bottom: 80px;
+    margin-bottom: 40px;
+    height: auto;
   }
   .about-billboard > div > div {
-    margin-top: 160px;
+    margin-top: 115px;
   }
   .about-billboard > div > div > div:first-child > h1 {
-    margin-bottom: 25px;
+    margin-bottom: 20px;
   }
   .about-billboard > div > div > div:first-child > p {
     padding-right: 0;
-    font-size: 18px;
+    font-size: 14px;
   }
   .about-billboard > div > div > div:last-child > img:first-of-type {
-    width: 390px;
+    width: 100%;
     height: 380px;
     position: relative;
     top: 0;
-    left: -55px;
-    margin: 40px 0;
+    left: -15px;
+    margin: 0 0;
+    -o-object-fit: contain;
+       object-fit: contain;
   }
   .stem {
     margin-top: 30px;
@@ -2481,7 +2409,7 @@ a {
     height: 600px;
   }
   .stem > div > div > div:first-child > img:first-of-type {
-    right: 12%;
+    right: 14%;
     top: 50px;
     position: relative;
   }
@@ -2499,11 +2427,12 @@ a {
   }
   .stem > div > div > div:last-child > h1 {
     margin-bottom: 25px;
-    font-size: 34px;
+    font-size: 25px;
   }
   .stem > div > div > div:last-child > p {
     padding-right: 0;
-    font-size: 18px;
+    font-size: 14px;
+    line-height: 1.3;
   }
   .team {
     background: none;
@@ -2529,28 +2458,29 @@ a {
             align-items: center;
   }
   .team > div > div .card {
-    width: 347px;
+    width: 100%;
     margin: 30px 0;
     height: 580px;
   }
   .team > div > div .card > img:first-of-type {
     height: 240px;
-    width: 347px;
+    width: 100%;
   }
   .team > div > div .card > img:last-of-type {
     width: 170px;
     height: 195px;
     top: 45px;
-    left: 26%;
+    left: 24%;
   }
   .team > div > div .card #human2 {
     width: 145px;
     height: 191px;
+    left: 80px;
   }
   .team > div > div .card > div > p {
     margin: 20px 0 20px;
     text-align: center;
-    font-size: 14px;
+    font-size: 13px;
     line-height: 1.3;
   }
   .team > div > div .card > div > div > a > img {
@@ -2559,6 +2489,9 @@ a {
   }
   .team > div > div .card > div > div > a:last-of-type > img {
     width: 22px;
+  }
+  .about-inspire > div > div > div:first-child > p {
+    letter-spacing: 0;
   }
   .about-inspire {
     margin: 60px 0 100px 0;
@@ -2580,6 +2513,10 @@ a {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .about-inspire > div > div > div:first-child > form > div label {
     padding: 27px 0 10px;
@@ -2588,7 +2525,7 @@ a {
     text-align: left;
   }
   .about-inspire > div > div > div:first-child > form > div > div #name {
-    width: 95%;
+    width: 100%;
     height: 40px;
     margin-right: 20px;
   }
@@ -2608,7 +2545,7 @@ a {
   }
   .about-inspire > div > div > div:last-child {
     padding: 0;
-    margin-top: 60px;
+    margin-top: 120px;
   }
   .about-inspire > div > div > div:last-child > img {
     width: 328px;
@@ -2651,12 +2588,27 @@ a {
     right: 0;
     width: 100px;
   }
+  .spotlight-about > div .billboard-inner .inner-about-1 {
+    margin: 0 0 40px;
+  }
+  .spotlight-about > div .billboard-inner .inner-about-1 > h2 {
+    padding: 0;
+    font-size: 20px;
+  }
+  .spotlight-about > div .billboard-inner .inner-about-1 > p {
+    font-size: 15px;
+    margin: 20px 0;
+  }
   .spotlight-about > div .billboard-inner > h2 {
     padding: 0;
     font-size: 20px;
   }
+  .spotlight-about > div .billboard-inner > p {
+    font-size: 15px;
+    margin: 20px 0;
+  }
   .spotlight-about > div .billboard-inner hr {
-    margin: 50px 0;
+    margin: 103px 0;
   }
   .spotlight-about > div .billboard-inner > p {
     font-size: 15px;
@@ -2830,21 +2782,21 @@ a {
     margin-top: 15px;
   }
   .inner-blog > div > div {
-    padding-top: 50px;
+    padding-top: 5px;
   }
   .inner-blog > div > div > div:first-child {
     padding-left: 15px;
   }
   .inner-blog > div > div > div:first-child > h2 {
-    margin-top: 20px;
-    margin-bottom: 40px;
+    margin-top: 10px;
+    margin-bottom: 15px;
   }
   .inner-blog > div > div > div:last-child {
     padding-bottom: 40px;
   }
   .inner-blog > div > div > div:last-child > img {
-    height: 310px;
-    width: 345px;
+    height: 300px;
+    width: 100%;
     -o-object-fit: cover;
        object-fit: cover;
   }
@@ -2894,7 +2846,7 @@ a {
   }
   .about-blog-carousel > div .billboard-inner > div {
     margin: 0px auto;
-    width: 350px;
+    width: 100%;
   }
   .about-blog-carousel > div .billboard-inner > div > a {
     width: 80px;
@@ -2912,11 +2864,12 @@ a {
   .projects-billboard > img:first-of-type {
     height: 140px;
     width: 230px;
-    left: 60%;
+    left: 42%;
+    position: relative;
   }
   .projects-billboard > img:last-of-type {
     height: 250px;
-    top: 50%;
+    top: 60%;
     width: 100%;
   }
   .projects-billboard > div {
@@ -2926,7 +2879,7 @@ a {
     width: 200px;
     height: 300px;
     position: relative;
-    top: -40px;
+    top: -168px;
     left: 28%;
   }
   .projects-billboard > div > div:first-child > div {
@@ -2938,20 +2891,26 @@ a {
             align-items: baseline;
   }
   .projects-billboard > div > div:first-child > div > img:first-child {
-    width: 90px;
+    width: 30%;
     height: 125px;
+    -o-object-fit: contain;
+       object-fit: contain;
   }
   .projects-billboard > div > div:first-child > div > img:nth-child(2) {
-    width: 110px;
+    width: 30%;
     height: 200px;
     margin: 0 15px 0 20px;
+    -o-object-fit: contain;
+       object-fit: contain;
   }
   .projects-billboard > div > div:first-child > div > img:last-of-type {
-    width: 120px;
+    width: 30%;
     height: 125px;
+    -o-object-fit: contain;
+       object-fit: contain;
   }
   .projects-billboard > div > div:last-child {
-    margin: 60px 0 0 0;
+    margin: 0;
   }
   .projects-billboard > div > div:last-child > p {
     margin: 30px 0;
@@ -3045,6 +3004,42 @@ a {
   .blog-section .btn-load {
     width: 120px;
     height: 120px;
+  }
+  .inner-about {
+    text-align: center;
+    margin: 0;
+  }
+  .inner-about > div .billboard-inner > p {
+    font-size: 15px;
+    margin: 15px 0;
+  }
+  .inner-about > div .billboard-inner .inner-about-inner {
+    width: 100%;
+  }
+  .inner-about > div .billboard-inner .inner-about-inner > a {
+    font-size: 9px;
+    width: 80px;
+    height: 22px;
+  }
+  .inner-about > div .billboard-inner .inner-about-inner > div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 55%;
+  }
+  .inner-about > div .billboard-inner .inner-about-inner > div > img {
+    width: 22px;
+    height: 22px;
+  }
+  .inner-about > div .billboard-inner .inner-about-inner > div > a {
+    margin: 0 11px;
+    font-size: 10px;
+  }
+  .inner-about > div .billboard-inner .inner-about-inner > div > li {
+    font-size: 10px;
   }
 }
 
@@ -3418,12 +3413,12 @@ a {
     top: -64%;
   }
   .about-billboard > div > div > div:last-child > img:first-of-type {
-    width: 600px;
+    width: 100%;
     height: 380px;
     position: relative;
     top: 60px;
-    left: -86px;
-    margin: 40px 0;
+    left: 0;
+    margin: 10px 0;
     -o-object-fit: contain;
        object-fit: contain;
   }
@@ -3602,15 +3597,26 @@ a {
   }
   .spotlight-about .carousel-control-prev {
     left: 0;
-    width: 100px;
+    width: 35%;
   }
   .spotlight-about .carousel-control-next {
     right: 0;
-    width: 100px;
+    width: 35%;
   }
   .spotlight-about > div > h2 {
     padding: 0;
     font-size: 24px;
+  }
+  .spotlight-about > div .billboard-inner .inner-about-1 {
+    margin: 0 0 40px;
+  }
+  .spotlight-about > div .billboard-inner .inner-about-1 > h2 {
+    padding: 0;
+    font-size: 20px;
+  }
+  .spotlight-about > div .billboard-inner .inner-about-1 > p {
+    font-size: 15px;
+    margin: 20px 0;
   }
   .spotlight-about > div .billboard-inner > p {
     font-size: 15px;
@@ -3792,10 +3798,10 @@ a {
   }
   .inner-blog > div > div > div:last-child > img {
     height: 310px;
-    width: 345px;
+    width: 100%;
     -o-object-fit: cover;
        object-fit: cover;
-    margin: 0;
+    margin: auto;
   }
   .about-blog {
     text-align: left;
@@ -3834,29 +3840,62 @@ a {
   .projects-billboard {
     padding-top: 90px;
     margin-bottom: 100px;
-    height: 370px;
+    height: auto;
   }
   .projects-billboard > img:first-of-type {
-    height: 150px;
+    height: 70px;
     width: 230px;
     left: 70%;
   }
   .projects-billboard > img:last-of-type {
-    height: 150px;
-    top: 65%;
+    height: 250px;
+    top: 60%;
     width: 100%;
   }
   .projects-billboard > div {
-    margin: 0;
+    margin: 20px 80px;
   }
   .projects-billboard > div > div:first-child > img {
-    display: none;
+    width: 150px;
+    height: 100px;
+    position: relative;
+    top: -168px;
+    left: 28%;
+    -o-object-fit: c;
+       object-fit: c;
+  }
+  .projects-billboard > div > div:first-child > div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+  }
+  .projects-billboard > div > div:first-child > div > img:first-child {
+    width: 30%;
+    height: 100px;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .projects-billboard > div > div:first-child > div > img:nth-child(2) {
+    width: 30%;
+    height: 175px;
+    margin: 0 15px 0 20px;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .projects-billboard > div > div:first-child > div > img:last-of-type {
+    width: 30%;
+    height: 100px;
+    -o-object-fit: contain;
+       object-fit: contain;
   }
   .projects-billboard > div > div:last-child {
-    margin: 80px 60px 0;
+    margin: 0;
   }
   .projects-billboard > div > div:last-child > p {
-    margin: 20px 0 0;
+    margin: 30px 0;
   }
   .about-projects > div > div {
     margin: auto;
@@ -3924,6 +3963,42 @@ a {
   .blog-section .btn-load {
     width: 120px;
     height: 120px;
+  }
+  .inner-about {
+    text-align: center;
+    margin: 0;
+  }
+  .inner-about > div .billboard-inner > p {
+    font-size: 15px;
+    margin: 15px 0;
+  }
+  .inner-about > div .billboard-inner .inner-about-inner {
+    width: 100%;
+  }
+  .inner-about > div .billboard-inner .inner-about-inner > a {
+    font-size: 9px;
+    width: 80px;
+    height: 22px;
+  }
+  .inner-about > div .billboard-inner .inner-about-inner > div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 55%;
+  }
+  .inner-about > div .billboard-inner .inner-about-inner > div > img {
+    width: 22px;
+    height: 22px;
+  }
+  .inner-about > div .billboard-inner .inner-about-inner > div > a {
+    margin: 0 11px;
+    font-size: 10px;
+  }
+  .inner-about > div .billboard-inner .inner-about-inner > div > li {
+    font-size: 10px;
   }
 }
 
@@ -4388,15 +4463,26 @@ a {
     margin: 0 30px 144px;
   }
   .spotlight-about .carousel-control-prev {
-    left: 80px;
+    left: 35px;
   }
   .spotlight-about .carousel-control-next {
-    right: 85px;
+    right: 35px;
   }
   .spotlight-about > div > h2 {
     color: #454545;
     padding: 0 50px;
     line-height: 1.2;
+  }
+  .spotlight-about > div .billboard-inner .inner-about-1 {
+    margin: 0 0 40px;
+  }
+  .spotlight-about > div .billboard-inner .inner-about-1 > h2 {
+    padding: 0;
+    font-size: 20px;
+  }
+  .spotlight-about > div .billboard-inner .inner-about-1 > p {
+    font-size: 18px;
+    margin: 20px 0;
   }
   .spotlight-about > div .billboard-inner > p {
     font-size: 18px;
@@ -4839,6 +4925,42 @@ a {
   .blog-section .btn-load {
     width: 130px;
     height: 130px;
+  }
+  .inner-about {
+    text-align: center;
+    margin: 0;
+  }
+  .inner-about > div .billboard-inner > p {
+    font-size: 15px;
+    margin: 15px 0;
+  }
+  .inner-about > div .billboard-inner .inner-about-inner {
+    width: 100%;
+  }
+  .inner-about > div .billboard-inner .inner-about-inner > a {
+    font-size: 14px;
+    width: 100px;
+    height: 30px;
+  }
+  .inner-about > div .billboard-inner .inner-about-inner > div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 50%;
+  }
+  .inner-about > div .billboard-inner .inner-about-inner > div > img {
+    width: 24px;
+    height: 24px;
+  }
+  .inner-about > div .billboard-inner .inner-about-inner > div > a {
+    margin: 0 11px;
+    font-size: 14px;
+  }
+  .inner-about > div .billboard-inner .inner-about-inner > div > li {
+    font-size: 14px;
   }
 }
 

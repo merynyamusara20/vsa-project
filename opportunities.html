@@ -13,7 +13,7 @@
 <!--start navbar  -->
 <div class="header">
     <div>
-       <img src="images/logo.png" alt="">
+        <a href="index.html"><img src="images/logo.png" alt="vsa-image"></a>
         <a href="about.html">ABOUT US</a> 
     </div>
     <input id="chk" type="checkbox"  >
@@ -25,7 +25,7 @@
         <li> <a href="opportunities.html"><i class="fas fa-circle"></i> OPPORTUNITIES</a></li> 
         <li> <a href="projects.html" class="active"><i class="fas fa-circle"></i> PROJECTS</a></li> 
         <li> <a href="blog.html" ><i class="fas fa-circle"></i> BLOG</a></li> 
-        <li> <a href="#footer" >CONTACT</a></li> 
+        <li> <a href="#donate.html" >DONATE</a></li> 
         <label for="chk" class="hide-menu-btn">
             <i class="fas fa-times "></i>
         </label>   
@@ -42,35 +42,38 @@
                 <div>
                     <p>Filter For Opportunities</p>
                     <div>
-                        <!--by country -->
+                        <!--by career -->
                         <div class="user-id" id="user" >
                           <p class="user-name">Career Level</p>
                           <div class="dropdown-arrow btnn rotate" ></div>
                           <div class="dropdown-menu myText" >
                                <div class="controls">
-                                <a href="javascript:void(0)" type="button"  onclick="filterToggle('career-level','all')" ><i class="fas fa-square-o fast fast-1"></i>All</a>
-                                <a href="javascript:void(0)" type="button"  onclick="filterToggle('career-level','all')"><i class="fas fa-square-o fast fast-1"></i>one</a>
-                                <a href="javascript:void(0)" type="button"  onclick="filterToggle('career-level','all')"><i class="fas fa-square-o  fast fast-1"></i>two</a>
-                                <a href="javascript:void(0)" type="button"  onclick="filterToggle('career-level','all')"><i class="fas fa-square-o fast fast-1" ></i>three</a>
-                                <a href="javascript:void(0)" type="button"  onclick="filterToggle('career-level','all')"><i class="fas fa-square-o fast fast-1" ></i>four</a>
+                                <a href="javascript:void(0)" type="button"  onclick="filterToggle('career','all')" ><i class="fas fa-square-o fast fast-1"></i>All</a>
+                                <a href="javascript:void(0)" type="button"  onclick="filterToggle('career','undergraduate')"><i class="fas fa-square-o fast fast-1"></i>Undergraduate</a>
+                                <a href="javascript:void(0)" type="button"  onclick="filterToggle('career','masters')"><i class="fas fa-square-o  fast fast-1"></i>Masters</a>
+                                <a href="javascript:void(0)" type="button"  onclick="filterToggle('career','professor')"><i class="fas fa-square-o fast fast-1" ></i>Professor</a>
+                                <a href="javascript:void(0)" type="button"  onclick="filterToggle('career','entrepreneur')"><i class="fas fa-square-o fast fast-1" ></i>Entrepreneur</a>
+                                <a href="javascript:void(0)" type="button"  onclick="filterToggle('career','phd')"><i class="fas fa-square-o fast fast-1"></i>PhD</a>
+                                <a href="javascript:void(0)" type="button"  onclick="filterToggle('career','found')"><i class="fas fa-square-o  fast fast-1"></i>Found</a>
+                                <a href="javascript:void(0)" type="button"  onclick="filterToggle('career','non')"><i class="fas fa-square-o fast fast-1" ></i>Non-Academic</a>
                                </div>
                           </div>
                          </div>
-                          <!--by country -->
+                          <!--by opportunity-type -->
                         <div class="user-id" id="user" >
                             <p class="user-name">Opportunity Type</p>
                             <div class="dropdown-arrow btnn1 rotate" ></div>
                             <div class="dropdown-menu myText1">
                                  <div>
-                                     <a href="javascript:void(0)" onclick="filterToggle('opp-type','all')">        <i class="fas fa-square-o fast fast-2"></i>All</a>
-                                     <a href="javascript:void(0)" onclick="filterToggle('opp-type','award')">      <i class="fas fa-square-o fast fast-2"></i>Award</a>
-                                     <a href="javascript:void(0)" onclick="filterToggle('opp-type','scholarship')">      <i class="fas fa-square-o fast fast-2"></i>Scholarship</a>
-                                     <a href="javascript:void(0)" onclick="filterToggle('opp-type','grant')">      <i class="fas fa-square-o fast fast-2"></i>Grant</a>
-                                     <a href="javascript:void(0)" onclick="filterToggle('opp-type','funding')">    <i class="fas fa-square-o fast fast-2" ></i>Funding</a>
-                                     <a href="javascript:void(0)" onclick="filterToggle('opp-type','fellowship')"> <i class="fas fa-square-o fast fast-2" ></i>Fellowship</a>
-                                     <a href="javascript:void(0)" onclick="filterToggle('opp-type','training')">   <i class="fas fa-square-o fast fast-2" ></i>Training</a>
-                                     <a href="javascript:void(0)" onclick="filterToggle('opp-type','internship')"> <i class="fas fa-square-o fast fast-2" ></i>Internship</a>
-                                     <a href="javascript:void(0)" onclick="filterToggle('opp-type','mentorship')"> <i class="fas fa-square-o fast fast-2" ></i>Mentorship</a>
+                                     <a href="javascript:void(0)" onclick="filterToggle('opportunity','all')">        <i class="fas fa-square-o fast fast-2"></i>All</a>
+                                     <a href="javascript:void(0)" onclick="filterToggle('opportunity','award')">      <i class="fas fa-square-o fast fast-2"></i>Award</a>
+                                     <a href="javascript:void(0)" onclick="filterToggle('opportunity','scholarship')">      <i class="fas fa-square-o fast fast-2"></i>Scholarship</a>
+                                     <a href="javascript:void(0)" onclick="filterToggle('opportunity','grant')">      <i class="fas fa-square-o fast fast-2"></i>Grant</a>
+                                     <a href="javascript:void(0)" onclick="filterToggle('opportunity','funding')">    <i class="fas fa-square-o fast fast-2" ></i>Funding</a>
+                                     <a href="javascript:void(0)" onclick="filterToggle('opportunity','fellowship')"> <i class="fas fa-square-o fast fast-2" ></i>Fellowship</a>
+                                     <a href="javascript:void(0)" onclick="filterToggle('opportunity','training')">   <i class="fas fa-square-o fast fast-2" ></i>Training</a>
+                                     <a href="javascript:void(0)" onclick="filterToggle('opportunity','internship')"> <i class="fas fa-square-o fast fast-2" ></i>Internship</a>
+                                     <a href="javascript:void(0)" onclick="filterToggle('opportunity','mentorship')"> <i class="fas fa-square-o fast fast-2" ></i>Mentorship</a>
                                  </div>
                             </div>
                            </div>
@@ -80,9 +83,12 @@
                             <div class="dropdown-arrow btnn2 rotate" ></div>
                             <div class="dropdown-menu myText2">
                                  <div>
-                                     <a href="javascript:void(0)" onclick="filterToggle('opp-type','all')" >          <i class="fas fa-square-o fast fast-3"></i>All</a>
-                                     <a href="javascript:void(0)" onclick="filterToggle('opp-type','africa')" >       <i class="fas fa-square-o fast fast-3"></i>Africa</a>
-                                     <a href="javascript:void(0)" onclick="filterToggle('opp-type','united-states')" ><i class="fas fa-square-o  fast fast-3"></i>United States of Amarica</a>
+                                     <a href="javascript:void(0)" onclick="filterToggle('country','all')" >          <i class="fas fa-square-o fast fast-3"></i>All</a>
+                                     <a href="javascript:void(0)" onclick="filterToggle('country','africa')" >       <i class="fas fa-square-o fast fast-3"></i>Africa</a>
+                                     <a href="javascript:void(0)" onclick="filterToggle('country','united-states')" ><i class="fas fa-square-o  fast fast-3"></i>International</a>
+                                     <a href="javascript:void(0)" onclick="filterToggle('country','ast&oceanic')" >          <i class="fas fa-square-o fast fast-3"></i>Astralia & Oceania</a>
+                                     <a href="javascript:void(0)" onclick="filterToggle('country','america')" >       <i class="fas fa-square-o fast fast-3"></i>America</a>
+                                     <a href="javascript:void(0)" onclick="filterToggle('country','asia')" ><i class="fas fa-square-o  fast fast-3"></i>Asia Europe</a>
 
                                  </div>
                             </div>
@@ -93,35 +99,35 @@
                             <div class="dropdown-arrow btnnn rotate"></div>
                             <div class="dropdown-menu Text menu2">
                                 <div>
-                                    <a href="javascript:void(0)" onclick="filterToggle('region','all')"  class="bnt">     <i class="fas fa-square-o fast fast-4"></i>All</a>
-                                    <a href="javascript:void(0)" onclick="filterToggle('region','artIn')" class="bnt">    <i class="fas fa-square-o fast fast-4"></i>Artificial Intelligence</a>
-                                    <a href="javascript:void(0)" onclick="filterToggle('region','astro')"  class="bnt">   <i class="fas fa-square-o fast fast-4"></i> Astronomy</a>
-                                    <a href="javascript:void(0)" onclick="filterToggle('region','phys')">   <i class="fas fa-square-o fast fast-4"></i> Astrophysics</a>
-                                    <a href="javascript:void(0)" onclick="filterToggle('region','biochem')"><i class="fas fa-square-o fast fast-4"></i> Biochemistry</a>
-                                    <a href="javascript:void(0)" onclick="filterToggle('region','bio')">    <i class="fas fa-square-o fast fast-4"></i> Biology</a>
-                                    <a href="javascript:void(0)" onclick="filterToggle('region','bioinfo')"><i class="fas fa-square-o fast fast-4"></i> Bioinformics</a>
-                                    <a href="javascript:void(0)" onclick="filterToggle('region','biome')">  <i class="fas fa-square-o fast fast-4"></i> Biomedicine</a>
-                                    <a href="javascript:void(0)" onclick="filterToggle('region','comp')">   <i class="fas fa-square-o fast fast-4"></i> Computer Science</a>
+                                    <a href="javascript:void(0)" onclick="filterToggle('field','all')"  class="bnt">     <i class="fas fa-square-o fast fast-4"></i>All</a>
+                                    <a href="javascript:void(0)" onclick="filterToggle('field','artIn')" class="bnt">    <i class="fas fa-square-o fast fast-4"></i>Artificial Intelligence</a>
+                                    <a href="javascript:void(0)" onclick="filterToggle('field','astro')"  class="bnt">   <i class="fas fa-square-o fast fast-4"></i> Astronomy</a>
+                                    <a href="javascript:void(0)" onclick="filterToggle('field','phys')">   <i class="fas fa-square-o fast fast-4"></i> Astrophysics</a>
+                                    <a href="javascript:void(0)" onclick="filterToggle('field','biochem')"><i class="fas fa-square-o fast fast-4"></i> Biochemistry</a>
+                                    <a href="javascript:void(0)" onclick="filterToggle('field','bio')">    <i class="fas fa-square-o fast fast-4"></i> Biology</a>
+                                    <a href="javascript:void(0)" onclick="filterToggle('field','bioinfo')"><i class="fas fa-square-o fast fast-4"></i> Bioinformics</a>
+                                    <a href="javascript:void(0)" onclick="filterToggle('field','biome')">  <i class="fas fa-square-o fast fast-4"></i> Biomedicine</a>
+                                    <a href="javascript:void(0)" onclick="filterToggle('field','comp')">   <i class="fas fa-square-o fast fast-4"></i> Computer Science</a>
                                 </div>
                                 <div>
-                                    <a href="javascript:void(0)" onclick="filterToggle('field','artIn')" class="bnt">    <i class="fas fa-square-o fast fast-2"></i>Artificial Intelligence</a>
-                                    <a href="javascript:void(0)" onclick="filterToggle('field','astro')"  class="bnt">   <i class="fas fa-square-o fast fast-2"></i> Astronomy</a>
-                                    <a href="javascript:void(0)" onclick="filterToggle('field','phys')">   <i class="fas fa-square-o fast fast-2"></i> Astrophysics</a>
-                                    <a href="javascript:void(0)" onclick="filterToggle('field','biochem')"><i class="fas fa-square-o fast fast-2"></i> Biochemistry</a>
-                                    <a href="javascript:void(0)" onclick="filterToggle('field','bio')"><i class="fas fa-square-o fast fast-2"></i> Biology</a>
-                                    <a href="javascript:void(0)" onclick="filterToggle('field','bioinfo')"><i class="fas fa-square-o fast fast-2"></i> Bioinformics</a>
-                                    <a href="javascript:void(0)" onclick="filterToggle('field','biome')"><i class="fas fa-square-o fast fast-2"></i> Biomedicine</a>
-                                    <a href="javascript:void(0)" onclick="filterToggle('field','comp')"><i class="fas fa-square-o fast fast-2"></i> Computer Science</a>
+                                    <a href="javascript:void(0)" onclick="filterToggle('field','artIn')" class="bnt">    <i class="fas fa-square-o fast fast-4"></i>Artificial Intelligence</a>
+                                    <a href="javascript:void(0)" onclick="filterToggle('field','astro')"  class="bnt">   <i class="fas fa-square-o fast fast-4"></i> Astronomy</a>
+                                    <a href="javascript:void(0)" onclick="filterToggle('field','phys')">   <i class="fas fa-square-o fast fast-4"></i> Astrophysics</a>
+                                    <a href="javascript:void(0)" onclick="filterToggle('field','biochem')"><i class="fas fa-square-o fast fast-4"></i> Biochemistry</a>
+                                    <a href="javascript:void(0)" onclick="filterToggle('field','bio')"><i class="fas fa-square-o fast fast-4"></i> Biology</a>
+                                    <a href="javascript:void(0)" onclick="filterToggle('field','bioinfo')"><i class="fas fa-square-o fast fast-4"></i> Bioinformics</a>
+                                    <a href="javascript:void(0)" onclick="filterToggle('field','biome')"><i class="fas fa-square-o fast fast-4"></i> Biomedicine</a>
+                                    <a href="javascript:void(0)" onclick="filterToggle('field','comp')"><i class="fas fa-square-o fast fast-4"></i> Computer Science</a>
                                 </div>
                                 <div>
-                                    <a href="javascript:void(0)" onclick="filterToggle('field','artIn')" class="bnt">    <i class="fas fa-square-o fast fast-2"></i>Artificial Intelligence</a>
-                                    <a href="javascript:void(0)" onclick="filterToggle('field','astro')"  class="bnt">   <i class="fas fa-square-o fast fast-2"></i> Astronomy</a>
-                                    <a href="javascript:void(0)" onclick="filterToggle('field','phys')">   <i class="fas fa-square-o fast fast-2"></i> Astrophysics</a>
-                                    <a href="javascript:void(0)" onclick="filterToggle('field','biochem')"><i class="fas fa-square-o fast fast-2"></i> Biochemistry</a>
-                                    <a href="javascript:void(0)" onclick="filterToggle('field','bio')"><i class="fas fa-square-o fast fast-2"></i> Biology</a>
-                                    <a href="javascript:void(0)" onclick="filterToggle('field','bioinfo')"><i class="fas fa-square-o fast fast-2"></i> Bioinformics</a>
-                                    <a href="javascript:void(0)" onclick="filterToggle('field','biome')"><i class="fas fa-square-o fast fast-2"></i> Biomedicine</a>
-                                    <a href="javascript:void(0)" onclick="filterToggle('field','comp')"><i class="fas fa-square-o fast fast-2"></i> Computer Science</a>
+                                    <a href="javascript:void(0)" onclick="filterToggle('field','artIn')" class="bnt">    <i class="fas fa-square-o fast fast-4"></i>Artificial Intelligence</a>
+                                    <a href="javascript:void(0)" onclick="filterToggle('field','astro')"  class="bnt">   <i class="fas fa-square-o fast fast-4"></i> Astronomy</a>
+                                    <a href="javascript:void(0)" onclick="filterToggle('field','phys')">   <i class="fas fa-square-o fast fast-4"></i> Astrophysics</a>
+                                    <a href="javascript:void(0)" onclick="filterToggle('field','biochem')"><i class="fas fa-square-o fast fast-4"></i> Biochemistry</a>
+                                    <a href="javascript:void(0)" onclick="filterToggle('field','bio')"><i class="fas fa-square-o fast fast-4"></i> Biology</a>
+                                    <a href="javascript:void(0)" onclick="filterToggle('field','bioinfo')"><i class="fas fa-square-o fast fast-4"></i> Bioinformics</a>
+                                    <a href="javascript:void(0)" onclick="filterToggle('field','biome')"><i class="fas fa-square-o fast fast-4"></i> Biomedicine</a>
+                                    <a href="javascript:void(0)" onclick="filterToggle('field','comp')"><i class="fas fa-square-o fast fast-4"></i> Computer Science</a>
                                 </div>
                             </div>
                            </div>
@@ -132,8 +138,8 @@
     </div>
 </section>
 <section class="filter-cards">
-    <div class="container myCard" >
-        <div class="cards mix all africa award comp one" >
+    <div class="container myCard" id="List" >
+        <div class="cards mix all africa award comp non" >
             <div>
                 <h3>AFRICA SCHOLARSHIP TO UNITED STATES</h3>
                 <p>This program was set up to assist undergraduate and postgraduate
@@ -152,7 +158,7 @@
                 <h5>#ComputerScience</h5>   
             </div>
         </div>
-        <div class="cards mix all united-states scholarship biochem astro two">
+        <div class="cards mix all america scholarship biochem astro phd">
             <div>
                 <h3>UNITED STATES SCHOLARSHIP TO AFRICA</h3>
                 <p>This program was set up to assist undergraduate and postgraduate
@@ -172,7 +178,7 @@
                 <h5>#Astronomy</h5>    
             </div>
         </div>
-        <div class="cards mix all united-states grant bioinfo comp three" >
+        <div class="cards mix all united-states united-states  america grant bioinfo comp undergraduate" >
             <div>
                 <h3>THE WELLCOME TRUST</h3>
                 <p>This program was set up to assist undergraduate and postgraduate
@@ -192,7 +198,7 @@
                 <h5> #ComputerScience </h5>  
             </div>
         </div>
-        <div class="cards mix all africa funding bioinfo comp four" >
+        <div class="cards mix all africa funding bioinfo comp found" >
             <div>
                 <h3>ASSOCIATION OF AFRICAN UNIVERSITIES</h3>
                 <p>This program was set up to assist undergraduate and postgraduate
@@ -212,7 +218,7 @@
                 <h5> #ComputerScience </h5>  
             </div>
         </div>
-        <div class="cards mix all united-states fellowship bioinfo comp one" >
+        <div class="cards mix all united-states america fellowship bioinfo comp phd" id="dorcus">
             <div>
                 <h3>DORCAS MUTHONI PHD FELLOWSHIP</h3>
                 <p>This program was set up to assist undergraduate and postgraduate
@@ -232,7 +238,7 @@
                 <h5> #ComputerScience </h5>  
             </div>
         </div>
-        <div class="cards mix all africa training bioinfo comp two" >
+        <div class="cards mix all africa training bioinfo comp phd entrepreneur" >
             <div>
                 <h3>AFRICA RESEARCH EXCELLENCE FUND</h3>
                 <p>This program was set up to assist undergraduate and postgraduate
@@ -252,7 +258,7 @@
                 <h5> #ComputerScience </h5>  
             </div>
         </div>
-        <div class="cards mix all africa internship bioinfo comp three" >
+        <div class="cards mix all africa internship bioinfo comp entrepreneur" >
             <div>
                 <h3>AFRICA RESEARCH EXCELLENCE FUND</h3>
                 <p>This program was set up to assist undergraduate and postgraduate
@@ -272,7 +278,166 @@
                 <h5> #ComputerScience </h5>  
             </div>
         </div>
-        <div class="cards mix all africa mentorship bioinfo comp  four" >
+        <div class="cards mix all asia africa mentorship bioinfo comp  entrepreneur" >
+            <div>
+                <h3>AFRICA RESEARCH EXCELLENCE FUND</h3>
+                <p>This program was set up to assist undergraduate and postgraduate
+                   students in the Motherland - AFRICA - to acquire knowledge in 
+                   Universities, Colleges and other Institutions of learning in 
+                   the United States.
+                </p>
+                <p>It is an initiative of the Union of Africa Americans in the
+                   United States as part of a special contribution for the
+                   development of the human resources of the Motherland.
+                </p>
+            </div>
+            <div>
+                <img src="images/Mentorship.png" alt="Spotlight img">
+                <h5>#Mentorship #Funding</h5> 
+                <h5>  #Africa #BioInformics </h5> 
+                <h5> #ComputerScience </h5>  
+            </div>
+        </div>
+        <div class="cards mix all africa award comp non" >
+            <div>
+                <h3>AFRICA SCHOLARSHIP TO UNITED STATES</h3>
+                <p>This program was set up to assist undergraduate and postgraduate
+                   students in the Motherland - AFRICA - to acquire knowledge in 
+                   Universities, Colleges and other Institutions of learning in 
+                   the United States.
+                </p>
+                <p>It is an initiative of the Union of Africa Americans in the
+                   United States as part of a special contribution for the
+                   development of the human resources of the Motherland.
+                </p>
+            </div>
+            <div>
+                <img src="images/Award.png" alt="Spotlight img">
+                <h5>#Award #UnitedStates </h5>
+                <h5>#ComputerScience</h5>   
+            </div>
+        </div>
+        <div class="cards mix all america scholarship biochem astro phd">
+            <div>
+                <h3>UNITED STATES SCHOLARSHIP TO AFRICA</h3>
+                <p>This program was set up to assist undergraduate and postgraduate
+                   students in the Motherland - AFRICA - to acquire knowledge in 
+                   Universities, Colleges and other Institutions of learning in 
+                   the United States.
+                </p>
+                <p>It is an initiative of the Union of Africa Americans in the
+                   United States as part of a special contribution for the
+                   development of the human resources of the Motherland.
+                </p>
+            </div>
+            <div>
+                <img src="images/scholarship.png" alt="Spotlight img">
+                <h5>#Scholarship #PhD</h5>
+                <h5>#UnitedStates #Biochemistry</h5>   
+                <h5>#Astronomy</h5>    
+            </div>
+        </div>
+        <div class="cards mix all united-states united-states  america grant bioinfo comp undergraduate" >
+            <div>
+                <h3>THE WELLCOME TRUST</h3>
+                <p>This program was set up to assist undergraduate and postgraduate
+                   students in the Motherland - AFRICA - to acquire knowledge in 
+                   Universities, Colleges and other Institutions of learning in 
+                   the United States.
+                </p>
+                <p>It is an initiative of the Union of Africa Americans in the
+                   United States as part of a special contribution for the
+                   development of the human resources of the Motherland.
+                </p>
+            </div>
+            <div>
+                <img src="images/Grant.png" alt="Spotlight img">
+                <h5>#Grant #Ghana #Robotics  </h5> 
+                <h5>#UnderGrad #BioInformics </h5> 
+                <h5> #ComputerScience </h5>  
+            </div>
+        </div>
+        <div class="cards mix all africa funding bioinfo comp found" >
+            <div>
+                <h3>ASSOCIATION OF AFRICAN UNIVERSITIES</h3>
+                <p>This program was set up to assist undergraduate and postgraduate
+                   students in the Motherland - AFRICA - to acquire knowledge in 
+                   Universities, Colleges and other Institutions of learning in 
+                   the United States.
+                </p>
+                <p>It is an initiative of the Union of Africa Americans in the
+                   United States as part of a special contribution for the
+                   development of the human resources of the Motherland.
+                </p>
+            </div>
+            <div>
+                <img src="images/Funding.png" alt="Spotlight img">
+                <h5>#PhD #Funding #Africa </h5> 
+                <h5> #BioInformics </h5> 
+                <h5> #ComputerScience </h5>  
+            </div>
+        </div>
+        <div class="cards mix all united-states america fellowship bioinfo comp phd" >
+            <div>
+                <h3>DORCAS MUTHONI PHD FELLOWSHIP</h3>
+                <p>This program was set up to assist undergraduate and postgraduate
+                   students in the Motherland - AFRICA - to acquire knowledge in 
+                   Universities, Colleges and other Institutions of learning in 
+                   the United States.
+                </p>
+                <p>It is an initiative of the Union of Africa Americans in the
+                   United States as part of a special contribution for the
+                   development of the human resources of the Motherland.
+                </p>
+            </div>
+            <div>
+                <img src="images/Fellowship.png" alt="Spotlight img">
+                <h5>#Fellowship #Funding </h5> 
+                <h5> #Africa #BioInformics </h5> 
+                <h5> #ComputerScience </h5>  
+            </div>
+        </div>
+        <div class="cards mix all africa training bioinfo comp phd entrepreneur" >
+            <div>
+                <h3>AFRICA RESEARCH EXCELLENCE FUND</h3>
+                <p>This program was set up to assist undergraduate and postgraduate
+                   students in the Motherland - AFRICA - to acquire knowledge in 
+                   Universities, Colleges and other Institutions of learning in 
+                   the United States.
+                </p>
+                <p>It is an initiative of the Union of Africa Americans in the
+                   United States as part of a special contribution for the
+                   development of the human resources of the Motherland.
+                </p>
+            </div>
+            <div>
+                <img src="images/Training.png" alt="Spotlight img">
+                <h5>#Training #Funding </h5> 
+                <h5> #Africa #BioInformics  </h5> 
+                <h5> #ComputerScience </h5>  
+            </div>
+        </div>
+        <div class="cards mix all africa internship bioinfo comp entrepreneur" >
+            <div>
+                <h3>AFRICA RESEARCH EXCELLENCE FUND</h3>
+                <p>This program was set up to assist undergraduate and postgraduate
+                   students in the Motherland - AFRICA - to acquire knowledge in 
+                   Universities, Colleges and other Institutions of learning in 
+                   the United States.
+                </p>
+                <p>It is an initiative of the Union of Africa Americans in the
+                   United States as part of a special contribution for the
+                   development of the human resources of the Motherland.
+                </p>
+            </div>
+            <div>
+                <img src="images/Internship.png" alt="Spotlight img">
+                <h5>#Internship #Funding </h5> 
+                <h5> #Africa #BioInformics</h5> 
+                <h5> #ComputerScience </h5>  
+            </div>
+        </div>
+        <div class="cards mix all asia africa mentorship bioinfo comp  entrepreneur" >
             <div>
                 <h3>AFRICA RESEARCH EXCELLENCE FUND</h3>
                 <p>This program was set up to assist undergraduate and postgraduate
@@ -293,11 +458,13 @@
             </div>
         </div>
     </div>
-    <div id="loadMore me"><a href="javascript:void(0)" class=" btn-load">LOAD MORE</a></div>
+    <div id="loadMore"><a href="javascript:void(0)" class=" btn-load">LOAD MORE</a></div>
     <div id="showLess"><a href="javascript:void(0)" class=" btn-load">LOAD LESS</a></div>
 </section>
 <input type="hidden" id="selected_opportunity-type" />
 <input type="hidden" id="selected_field" />
+<input type="hidden" id="selected_country" />
+<input type="hidden" id="selected_career" />
 
 
 
@@ -305,16 +472,16 @@
 <!--START FOOTER -->
 <section class="footer" id="footer">
     <div class="div">
-        <a href="#">
+        <a href="www.facebook.com">
             <img src="images/facebook-icon.png" alt="spotlight" onmouseover="this.src='images/facebook-hover.png'" onmouseout="this.src='images/facebook-icon.png'" >
         </a>
-        <a href="#">
+        <a href="www.twitter.com">
             <img src="images/twitter-icon.png" alt="spotlight" onmouseover="this.src='images/twitter-hover.png'" onmouseout="this.src='images/twitter-icon.png'">
         </a>
-        <a href="#">
+        <a href="www.instagram.com">
             <img src="images/instagram-icon.png" alt="spotlight" onmouseover="this.src='images/insta-hover.png'" onmouseout="this.src='images/instagram-icon.png'">
         </a>
-        <a href="#">
+        <a href="javascript:void(0)">
             <img src="images/envelope-icon.png" alt="spotlight" onmouseover="this.src='images/envolope-hover.png'" onmouseout="this.src='images/envelope-icon.png'">
         </a>
     </div>

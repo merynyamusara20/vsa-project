@@ -87,10 +87,12 @@ jQuery(document).ready(function(){
                 }
             })
         })
-  
+
 
 var selected_country = $('#selected_country');
 var selected_field = $('#selected_field');
+var selected_opportunity = $('#selected_opportunity');
+var selected_region = $('#selected_career');
 
 function filterToggle(type,cls){
   if(type == 'country'){
@@ -99,34 +101,21 @@ function filterToggle(type,cls){
   else if(type == 'field'){
     selected_field.val(cls);
   }
+  else if(type == 'opportunity'){
+    selected_field.val(cls);
+  }
+  else if(type == 'career'){
+    selected_field.val(cls);
+  }
 
-  if(selected_country.val() === '' || selected_field.val() === ''){
+  if(selected_country.val() == '' || selected_field.val() == '' || selected_opportunity.val() == '' || selected_career.val() == ''){
     $('.mix').hide().filter('.'+cls).fadeIn("10");
   }
   else{
-    $('.mix').hide().filter('.'+selected_country.val()).filter('.'+selected_field.val()).fadeIn("10");
+    $('.mix').hide().filter('.'+selected_country.val()).filter('.'+selected_field.val()).filter('.'+selected_opportunity.val())
+    .filter('.'+selected_opportunity.val()).fadeIn("10").filter('.'+selected_career.val()).fadeIn("10");
   }
 }
-
-// var selected_country = $('#selected_opportunity-type');
-// var selected_field = $('#selected_field');
-
-
-// function filterToggle(type,cls){
-//   if(type == 'opportunity-type'){
-//     selected_opportunity-type.val(cls);
-//   }
-//   else if(type == 'field'){
-//     selected_field.val(cls);
-//   }
-
-//   if(selected_opportunity-type.val() === '' || selected_field.val() === ''){
-//     $('.mix').hide().filter('.'+cls).fadeIn("10");
-//   }
-//   else{
-//     $('.mix').hide().filter('.'+selected_opportunity-type.val()).filter('.'+selected_field.val()).fadeIn("10");
-//   }
-// }
 
 
 
@@ -136,6 +125,7 @@ function filterToggle(type,cls){
 // load more button
   var numberOfItems=3;
   $('#myList .col-md-4:lt('+numberOfItems+')').fadeIn();
+
 
   $('#loadMore').click(function () {
       numberOfItems = numberOfItems+6;
@@ -147,6 +137,26 @@ function filterToggle(type,cls){
   $('#showLess').click(function () {
       numberOfItems= numberOfItems-6;
       $('#myList .col-md-4').not(':lt('+numberOfItems+')').fadeOut();
+      $('#loadMore').css("display", "block");
+      $('#showLess').css("display", "none");
+  });
+
+
+  // load more button
+  var numberOfItems=8;
+  $('#List .cards:lt('+numberOfItems+')').fadeIn();
+
+
+  $('#loadMore').click(function () {
+      numberOfItems = numberOfItems+8;
+      $('#List .cards:lt('+numberOfItems+')').fadeIn();
+              $('#loadMore').css("display", "none");
+      $('#showLess').css("display", "block");
+  });
+
+  $('#showLess').click(function () {
+      numberOfItems= numberOfItems-8;
+      $('#List .cards').not(':lt('+numberOfItems+')').fadeOut();
       $('#loadMore').css("display", "block");
       $('#showLess').css("display", "none");
   });

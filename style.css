@@ -1,4 +1,3 @@
-@charset "UTF-8";
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -42,8 +41,8 @@ q:before, q:after {
   content: none;
 }
 
-output {
-  outline: 0;
+input {
+  outline: 0 !important;
 }
 
 html, body {
@@ -88,6 +87,9 @@ p {
 
 a {
   text-decoration: none;
+  outline: 0;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 a:hover {
@@ -115,6 +117,9 @@ a:hover {
   font-family: "Rubik Bold";
   margin-top: 20px;
   letter-spacing: .1px;
+  outline: 0;
+  -webkit-box-shadow: 0;
+          box-shadow: 0;
 }
 
 .btn:hover {
@@ -156,7 +161,7 @@ a:hover {
   z-index: 8888888;
 }
 
-.header > div > img {
+.header > div > a:first-of-type > img {
   width: 60px;
   height: 59px;
 }
@@ -512,6 +517,7 @@ a:hover {
   border: 1px solid #454545;
   margin-right: 20px;
   outline: 0;
+  padding: 0 5px;
 }
 
 .inspire > div > div:first-child > form > div > div #email {
@@ -520,6 +526,7 @@ a:hover {
   border-radius: 1px;
   border: 1px solid #454545;
   outline: 0;
+  padding: 0 5px;
 }
 
 .inspire > div > div:first-child > form > div:nth-child(2) {
@@ -539,6 +546,7 @@ a:hover {
   width: 552px;
   border-radius: 1px;
   outline: 0;
+  padding: 15px 10px;
 }
 
 .inspire > div > div:first-child > form > a {
@@ -546,6 +554,7 @@ a:hover {
   width: 145px;
   font-size: 21px;
   height: 50px;
+  outline: 0;
 }
 
 .inspire > div > div:last-child {
@@ -637,6 +646,9 @@ a:hover {
   height: 35px;
   font-size: 15px;
   margin: auto;
+  outline: 0;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 .opportunities > div > div > div > div .middle {
@@ -908,6 +920,8 @@ a:hover {
   border-radius: 1px;
   border: 1px solid #454545;
   margin-right: 20px;
+  outline: 0;
+  padding: 0 8px;
 }
 
 .about-inspire > div > div > div:first-child > form > div > div #email {
@@ -915,6 +929,8 @@ a:hover {
   height: 50px;
   border-radius: 1px;
   border: 1px solid #454545;
+  outline: 0;
+  padding: 0 8px;
 }
 
 .about-inspire > div > div > div:first-child > form > div:nth-child(2) {
@@ -933,6 +949,8 @@ a:hover {
   height: 150px;
   width: 552px;
   border-radius: 1px;
+  outline: 0;
+  padding: 15px 10px;
 }
 
 .about-inspire > div > div > div:first-child > form > a {
@@ -941,6 +959,9 @@ a:hover {
   font-size: 21px;
   height: 50px;
   margin-bottom: 21px;
+  outline: 0;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 .about-inspire > div > div > div:last-child {
@@ -1034,11 +1055,11 @@ a:hover {
 }
 
 .spotlight-about .carousel-control-prev {
-  left: 200px;
+  left: 130px;
 }
 
 .spotlight-about .carousel-control-next {
-  right: 200px;
+  right: 130px;
 }
 
 .spotlight-about > div > h2 {
@@ -1107,6 +1128,7 @@ a:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  width: 300px;
 }
 
 .spotlight-about > div .billboard-inner > div > div > img {
@@ -1226,8 +1248,8 @@ a:hover {
   margin-right: 9px;
 }
 
-.more-spotlights > div > div > div:last-child > div > div .user-id .dropdown-menu > div > a > i:hover {
-  background-color: #3B4C99;
+.more-spotlights > div > div > div:last-child > div > div .user-id .dropdown-menu > div > a:focus i {
+  background-color: #4157AF;
 }
 
 .more-spotlights > div > div > div:last-child > div > div .user-id .Text {
@@ -1252,7 +1274,7 @@ a:hover {
   transition: display .8s;
 }
 
-.more-cards > div > div .card {
+.more-cards > div > div .inner-spotlight-link .card {
   width: 287px;
   height: 380px;
   -webkit-box-shadow: 0px 2px 40px whitesmoke;
@@ -1269,7 +1291,7 @@ a:hover {
   margin-bottom: 35px;
 }
 
-.more-cards > div > div .card .spotlight-img {
+.more-cards > div > div .inner-spotlight-link .card .spotlight-img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1281,29 +1303,29 @@ a:hover {
           justify-content: space-between;
 }
 
-.more-cards > div > div .card .spotlight-img > img:first-of-type {
+.more-cards > div > div .inner-spotlight-link .card .spotlight-img > img:first-of-type {
   width: 136px;
   height: 150px;
   -o-object-fit: contain;
      object-fit: contain;
 }
 
-.more-cards > div > div .card .spotlight-img > img:last-of-type {
+.more-cards > div > div .inner-spotlight-link .card .spotlight-img > img:last-of-type {
   height: 65px;
   width: 65px;
 }
 
-.more-cards > div > div .card > p {
+.more-cards > div > div .inner-spotlight-link .card > p {
   color: #454545;
   line-height: 1.2;
   font-size: 24px;
 }
 
-.more-cards > div > div .card > p:last-of-type {
+.more-cards > div > div .inner-spotlight-link .card > p:last-of-type {
   font-size: 22px;
 }
 
-.more-cards > div > div .card > div > h5 {
+.more-cards > div > div .inner-spotlight-link .card > div > h5 {
   font-size: 18px;
 }
 
@@ -1429,6 +1451,14 @@ a:hover {
   margin: 0;
 }
 
+.inner-about .carousel-control-prev {
+  left: 180px;
+}
+
+.inner-about .carousel-control-next {
+  right: 185px;
+}
+
 .inner-about > div > h2 {
   font-family: 'Rubik Medium';
 }
@@ -1485,6 +1515,7 @@ a:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  width: 450px;
 }
 
 .inner-about > div .billboard-inner .inner-about-inner > div > img {
@@ -1597,6 +1628,14 @@ a:hover {
   margin: 0 240px 0;
 }
 
+.about-blog-carousel .carousel-control-prev {
+  left: 220px;
+}
+
+.about-blog-carousel .carousel-control-next {
+  right: 220px;
+}
+
 .about-blog-carousel > div {
   text-align: left;
 }
@@ -1629,32 +1668,34 @@ a:hover {
   color: #454545;
 }
 
-.projects-billboard {
-  height: auto;
-  width: 100%;
-  padding-top: 90px;
-  overflow-x: hidden;
-  margin-bottom: 120px;
-}
-
-.projects-billboard > img {
-  position: absolute;
-}
-
-.projects-billboard > img:first-of-type {
-  height: 251px;
-  width: 383px;
-  left: 74%;
-  z-index: 234;
+.project-image-div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  width: 100%;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  height: 383px;
 }
 
-.projects-billboard > img:last-of-type {
-  height: 504px;
-  top: 35%;
+.project-image-div > img {
+  height: 100%;
+}
+
+.project-image-div2 {
+  height: 512px;
   width: 100%;
+  position: absolute;
+  top: 300px;
+}
+
+.projects-billboard {
+  height: auto;
+  width: 100%;
+  overflow-x: hidden;
+  margin-top: -295px;
+  margin-bottom: 230px;
 }
 
 .projects-billboard > div {
@@ -1807,12 +1848,12 @@ a:hover {
   display: none;
 }
 
-.blog-section > div > div .small-card {
+.blog-section > div > div .inner-blog-link .small-card {
   height: 450px;
   border: none;
 }
 
-.blog-section > div > div > div {
+.blog-section > div > div .inner-blog-link > div {
   border: none;
   text-align: center;
   width: 100%;
@@ -1822,31 +1863,31 @@ a:hover {
   margin-bottom: 30px;
 }
 
-.blog-section > div > div > div .img1 {
+.blog-section > div > div .inner-blog-link > div .img1 {
   width: 100%;
   height: 318px;
   -o-object-fit: cover;
      object-fit: cover;
 }
 
-.blog-section > div > div > div .img2 {
+.blog-section > div > div .inner-blog-link > div .img2 {
   width: 100%;
   height: 233px;
   -o-object-fit: cover;
      object-fit: cover;
 }
 
-.blog-section > div > div > div > div > h3 {
+.blog-section > div > div .inner-blog-link > div > div > h3 {
   font-family: 'Rubik Medium';
 }
 
-.blog-section > div > div > div > div > p:first-of-type {
+.blog-section > div > div .inner-blog-link > div > div > p:first-of-type {
   font-size: 14px;
   color: #454545;
   margin: 20px 0;
 }
 
-.blog-section > div > div > div > div > p:last-of-type {
+.blog-section > div > div .inner-blog-link > div > div > p:last-of-type {
   font-size: 18px;
   color: #454545;
 }
@@ -1876,6 +1917,11 @@ a:hover {
   margin: auto;
   margin-bottom: 80px;
   font-family: "Rubik Bold";
+}
+
+.blog-section .btn-load:hover {
+  color: #75a1de;
+  border: 1px solid #75a1de;
 }
 
 .opportunities-filters {
@@ -2040,6 +2086,11 @@ a:hover {
   font-family: "Rubik Bold";
 }
 
+.filter-cards .btn-load:hover {
+  color: #75a1de;
+  border: 1px solid #75a1de;
+}
+
 @media (max-width: 575px) {
   body {
     overflow-x: hidden;
@@ -2121,7 +2172,7 @@ a:hover {
     color: #75a1de;
   }
   .billboard {
-    height: 650px;
+    height: auto;
     padding-top: 120px;
     overflow-x: hidden;
   }
@@ -2168,7 +2219,7 @@ a:hover {
     width: 330px;
     top: -10%;
     left: 0;
-    padding: 0 8px;
+    padding: 0 12px;
   }
   .billboard > div > div > div > div > div > div > div:last-of-type > a {
     font-size: 10px;
@@ -2244,10 +2295,12 @@ a:hover {
   .inspire > div > div:first-child > h2 {
     margin-right: 0;
     line-height: 1.2;
+    margin: 0 3px;
   }
   .inspire > div > div:first-child > p {
     margin: 20px 10px;
     padding-right: 0;
+    letter-spacing: 0;
   }
   .inspire > div > div:first-child > form {
     text-align: center;
@@ -2295,6 +2348,9 @@ a:hover {
     width: 130px;
     font-size: 18px;
     height: 40px;
+    outline: 0;
+    -webkit-box-shadow: none;
+            box-shadow: none;
   }
   .inspire > div > div:last-child {
     margin-top: 30px;
@@ -2628,7 +2684,7 @@ a:hover {
   }
   .spotlight-about > div .billboard-inner > div > a {
     font-size: 8px;
-    width: 60px;
+    width: 80px;
     height: 25px;
   }
   .spotlight-about > div .billboard-inner > div > div > img {
@@ -2691,7 +2747,7 @@ a:hover {
   }
   .more-spotlights > div > div > div:last-child > div > div .user-id .dropdown-menu {
     top: 45px;
-    height: 135px;
+    height: 140px;
     width: 171px;
   }
   .more-spotlights > div > div > div:last-child > div > div .user-id .dropdown-menu > div > a {
@@ -2711,28 +2767,28 @@ a:hover {
     margin: 0 35px;
     padding-top: 5px;
   }
-  .more-cards > div > div .card {
+  .more-cards > div > div .inner-spotlight-link .card {
     margin: 20px auto;
     width: 100%;
     -webkit-box-pack: space-evenly;
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
   }
-  .more-cards > div > div .card .spotlight-img > img:first-of-type {
+  .more-cards > div > div .inner-spotlight-link .card .spotlight-img > img:first-of-type {
     width: 130px;
     height: 130px;
   }
-  .more-cards > div > div .card .spotlight-img > img:last-of-type {
+  .more-cards > div > div .inner-spotlight-link .card .spotlight-img > img:last-of-type {
     height: 50px;
     width: 50px;
   }
-  .more-cards > div > div .card > p {
+  .more-cards > div > div .inner-spotlight-link .card > p {
     font-size: 20px;
   }
-  .more-cards > div > div .card > p:last-of-type {
+  .more-cards > div > div .inner-spotlight-link .card > p:last-of-type {
     font-size: 18px;
   }
-  .more-cards > div > div .card > div > h5 {
+  .more-cards > div > div .inner-spotlight-link .card > div > h5 {
     font-size: 16px;
   }
   .inner-spotlight-billboard {
@@ -2865,6 +2921,20 @@ a:hover {
     font-size: 15px;
     color: #454545;
   }
+  .project-image-div > img {
+    height: 85%;
+    width: 70%;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .project-image-div2 {
+    height: 250px;
+    width: 100%;
+    position: absolute;
+    top: 325px;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
   .projects-billboard {
     padding-top: 90px;
     margin-bottom: 10px;
@@ -2887,8 +2957,8 @@ a:hover {
     width: 200px;
     height: 300px;
     position: relative;
-    top: -168px;
-    left: 28%;
+    top: -190px;
+    left: 35%;
   }
   .projects-billboard > div > div:first-child > div {
     display: -webkit-box;
@@ -2988,25 +3058,25 @@ a:hover {
     font-size: 28px;
     margin: 70px 0 30px 0;
   }
-  .blog-section > div > div .small-card {
+  .blog-section > div > div .inner-blog-link .small-card {
     height: 430px;
   }
-  .blog-section > div > div > div {
+  .blog-section > div > div .inner-blog-link > div {
     -webkit-box-shadow: 0 4px 20px #D4D4D4;
             box-shadow: 0 4px 20px #D4D4D4;
     height: 430px;
   }
-  .blog-section > div > div > div .img1 {
+  .blog-section > div > div .inner-blog-link > div .img1 {
     height: 233px;
   }
-  .blog-section > div > div > div .img2 {
+  .blog-section > div > div .inner-blog-link > div .img2 {
     height: 233px;
   }
-  .blog-section > div > div > div > div > p:first-of-type {
+  .blog-section > div > div .inner-blog-link > div > div > p:first-of-type {
     font-size: 14px;
     margin: 20px 0;
   }
-  .blog-section > div > div > div > div > p:last-of-type {
+  .blog-section > div > div .inner-blog-link > div > div > p:last-of-type {
     font-size: 16px;
   }
   .blog-section .btn-load {
@@ -3058,6 +3128,11 @@ a:hover {
     text-align: center;
     width: 100%;
   }
+  .opportunities-filters > div > div > div:last-child > p {
+    font-size: 14px;
+    line-height: 1.3;
+    margin: 15px 0 20px;
+  }
   .opportunities-filters > div > div > div:last-child > div {
     height: 500px;
     width: 100%;
@@ -3102,10 +3177,10 @@ a:hover {
     left: 30px;
   }
   .opportunities-filters > div > div > div:last-child > div > div .user-id .btnn2 {
-    left: 117px;
+    left: 113px;
   }
   .opportunities-filters > div > div > div:last-child > div > div .user-id .btnnn {
-    left: 137px;
+    left: 131px;
   }
   .opportunities-filters > div > div > div:last-child > div > div .user-id .dropdown-menu {
     height: 193px;
@@ -3132,8 +3207,8 @@ a:hover {
     width: 100%;
   }
   .filter-cards > div > div > div:last-child > img {
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
     margin-bottom: 22px;
     -o-object-fit: contain;
        object-fit: contain;
@@ -3457,6 +3532,7 @@ a:hover {
     height: 35px;
     font-size: 14px;
     margin: auto;
+    outline: 0;
   }
   .opportunities > div > div > div > div .middle {
     height: 340px;
@@ -3725,7 +3801,7 @@ a:hover {
   }
   .spotlight-about > div .billboard-inner > div > a {
     font-size: 10px;
-    width: 60px;
+    width: 90px;
     height: 25px;
   }
   .spotlight-about > div .billboard-inner > div > div > a {
@@ -3803,24 +3879,24 @@ a:hover {
     margin: 0 35px;
     padding-top: 5px;
   }
-  .more-cards > div > div .card {
+  .more-cards > div > div .inner-spotlight-link .card {
     margin: 30px auto;
   }
-  .more-cards > div > div .card .spotlight-img > img:first-of-type {
+  .more-cards > div > div .inner-spotlight-link .card .spotlight-img > img:first-of-type {
     width: 130px;
     height: 130px;
   }
-  .more-cards > div > div .card .spotlight-img > img:last-of-type {
+  .more-cards > div > div .inner-spotlight-link .card .spotlight-img > img:last-of-type {
     height: 60px;
     width: 60px;
   }
-  .more-cards > div > div .card > p {
+  .more-cards > div > div .inner-spotlight-link .card > p {
     font-size: 20px;
   }
-  .more-cards > div > div .card > p:last-of-type {
+  .more-cards > div > div .inner-spotlight-link .card > p:last-of-type {
     font-size: 18px;
   }
-  .more-cards > div > div .card > div > h5 {
+  .more-cards > div > div .inner-spotlight-link .card > div > h5 {
     font-size: 16px;
   }
   .inner-spotlight-billboard {
@@ -3934,6 +4010,20 @@ a:hover {
   .about-blog-carousel > div .billboard-inner > div > p {
     font-size: 15px;
   }
+  .project-image-div {
+    height: 345px;
+  }
+  .project-image-div > img {
+    height: 85%;
+    width: 40%;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .project-image-div2 {
+    top: 75px;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
   .projects-billboard {
     padding-top: 90px;
     margin-bottom: 100px;
@@ -3954,12 +4044,12 @@ a:hover {
   }
   .projects-billboard > div > div:first-child > img {
     width: 150px;
-    height: 100px;
+    height: 200px;
     position: relative;
     top: -168px;
-    left: 28%;
-    -o-object-fit: c;
-       object-fit: c;
+    left: 60%;
+    -o-object-fit: contain;
+       object-fit: contain;
   }
   .projects-billboard > div > div:first-child > div {
     display: -webkit-box;
@@ -4036,25 +4126,25 @@ a:hover {
     font-size: 28px;
     margin: 70px 0 30px 0;
   }
-  .blog-section > div > div .small-card {
+  .blog-section > div > div .inner-blog-link .small-card {
     height: 400px;
   }
-  .blog-section > div > div > div {
+  .blog-section > div > div .inner-blog-link > div {
     -webkit-box-shadow: 0 4px 20px #D4D4D4;
             box-shadow: 0 4px 20px #D4D4D4;
     height: 400px;
   }
-  .blog-section > div > div > div .img1 {
+  .blog-section > div > div .inner-blog-link > div .img1 {
     height: 233px;
   }
-  .blog-section > div > div > div .img2 {
+  .blog-section > div > div .inner-blog-link > div .img2 {
     height: 233px;
   }
-  .blog-section > div > div > div > div > p:first-of-type {
+  .blog-section > div > div .inner-blog-link > div > div > p:first-of-type {
     font-size: 14px;
     margin: 20px 0;
   }
-  .blog-section > div > div > div > div > p:last-of-type {
+  .blog-section > div > div .inner-blog-link > div > div > p:last-of-type {
     font-size: 18px;
   }
   .blog-section .btn-load {
@@ -4647,13 +4737,13 @@ a:hover {
        object-fit: contain;
   }
   .spotlight-about {
-    margin: 0 30px 144px;
+    margin: 0 30px 100px;
   }
   .spotlight-about .carousel-control-prev {
-    left: 35px;
+    left: 78px;
   }
   .spotlight-about .carousel-control-next {
-    right: 35px;
+    right: 78px;
   }
   .spotlight-about > div > h2 {
     color: #454545;
@@ -4718,6 +4808,7 @@ a:hover {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    width: 270px;
   }
   .spotlight-about > div .billboard-inner > div > div > img {
     width: 25px;
@@ -4809,7 +4900,7 @@ a:hover {
   .more-cards > div > div {
     max-width: 50%;
   }
-  .more-cards > div > div.card {
+  .more-cards > div > div .inner-spotlight-link .card {
     width: 287px;
     height: 380px;
     -webkit-box-shadow: 0px 2px 40px whitesmoke;
@@ -4825,7 +4916,7 @@ a:hover {
     color: #454545;
     margin-bottom: 35px;
   }
-  .more-cards > div > div.card .spotlight-img {
+  .more-cards > div > div .inner-spotlight-link .card .spotlight-img {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -4836,25 +4927,25 @@ a:hover {
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
-  .more-cards > div > div.card .spotlight-img > img:first-of-type {
+  .more-cards > div > div .inner-spotlight-link .card .spotlight-img > img:first-of-type {
     width: 136px;
     height: 150px;
     -o-object-fit: contain;
        object-fit: contain;
   }
-  .more-cards > div > div.card .spotlight-img > img:last-of-type {
+  .more-cards > div > div .inner-spotlight-link .card .spotlight-img > img:last-of-type {
     height: 65px;
     width: 65px;
   }
-  .more-cards > div > div.card > p {
+  .more-cards > div > div .inner-spotlight-link .card > p {
     color: #454545;
     line-height: 1.2;
     font-size: 24px;
   }
-  .more-cards > div > div.card > p:last-of-type {
+  .more-cards > div > div .inner-spotlight-link .card > p:last-of-type {
     font-size: 22px;
   }
-  .more-cards > div > div.card > div > h5 {
+  .more-cards > div > div .inner-spotlight-link .card > div > h5 {
     font-size: 18px;
   }
   .inner-spotlight-billboard {
@@ -4962,6 +5053,12 @@ a:hover {
     font-size: 12px;
     height: 50px;
   }
+  .about-blog-carousel .carousel-control-prev {
+    left: 94px;
+  }
+  .about-blog-carousel .carousel-control-next {
+    right: 6px;
+  }
   .about-blog-carousel > div {
     padding: 0 40px;
   }
@@ -4987,15 +5084,25 @@ a:hover {
     font-size: 15px;
     color: #454545;
   }
+  .project-image-div > img {
+    height: 90%;
+    -o-object-fit: contain;
+       object-fit: contain;
+    width: 43%;
+  }
+  .project-image-div2 {
+    top: 335px;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
   .projects-billboard {
     padding-top: 90px;
-    margin-bottom: 230px;
+    margin-bottom: 30px;
   }
   .projects-billboard > img:first-of-type {
     height: 150px;
     width: 176px;
     left: 77%;
-    display: none;
   }
   .projects-billboard > img:last-of-type {
     height: 150px;
@@ -5005,18 +5112,31 @@ a:hover {
   .projects-billboard > div {
     margin: 0;
   }
-  .projects-billboard > div > div:first-child {
-    display: none;
+  .projects-billboard > div > div:first-child > div {
+    width: 100%;
+  }
+  .projects-billboard > div > div:first-child > div > img:first-child {
+    width: 30%;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .projects-billboard > div > div:first-child > div > img:nth-child(2) {
+    width: 30%;
+    -o-object-fit: contain;
+       object-fit: contain;
+    margin: 0 15px 0 25px;
+  }
+  .projects-billboard > div > div:first-child > div > img:last-of-type {
+    width: 30%;
+    -o-object-fit: contain;
+       object-fit: contain;
   }
   .projects-billboard > div > div:last-child {
-    margin: 80px 0 0 80px;
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 70%;
-            flex: 0 0 70%;
-    max-width: 100%;
+    margin: 100px 0 0 0;
   }
   .projects-billboard > div > div:last-child > p {
     margin: 20px 0 0;
+    font-size: 14px;
   }
   .about-projects > div > div {
     margin: auto;
@@ -5083,29 +5203,29 @@ a:hover {
     font-size: 30px;
     margin: 60px 0 40px;
   }
-  .blog-section > div > div .small-card {
+  .blog-section > div > div .inner-blog-link .small-card {
     height: auto;
   }
-  .blog-section > div > div > div {
+  .blog-section > div > div .inner-blog-link > div {
     height: auto;
   }
-  .blog-section > div > div > div .img1 {
+  .blog-section > div > div .inner-blog-link > div .img1 {
     height: 200px;
   }
-  .blog-section > div > div > div .img2 {
+  .blog-section > div > div .inner-blog-link > div .img2 {
     height: 160px;
   }
-  .blog-section > div > div > div > div {
+  .blog-section > div > div .inner-blog-link > div > div {
     padding: 10px;
   }
-  .blog-section > div > div > div > div > h3 {
+  .blog-section > div > div .inner-blog-link > div > div > h3 {
     font-size: 18px;
   }
-  .blog-section > div > div > div > div > p:first-of-type {
+  .blog-section > div > div .inner-blog-link > div > div > p:first-of-type {
     font-size: 12px;
     margin: 10px 0;
   }
-  .blog-section > div > div > div > div > p:last-of-type {
+  .blog-section > div > div .inner-blog-link > div > div > p:last-of-type {
     font-size: 14px;
     color: #454545;
   }
@@ -5116,6 +5236,12 @@ a:hover {
   .inner-about {
     text-align: center;
     margin: 0;
+  }
+  .inner-about .carousel-control-next {
+    right: 49px;
+  }
+  .inner-about .carousel-control-prev {
+    left: 49px;
   }
   .inner-about > div .billboard-inner > p {
     font-size: 15px;
@@ -5136,7 +5262,7 @@ a:hover {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    width: 50%;
+    width: 290px;
   }
   .inner-about > div .billboard-inner .inner-about-inner > div > img {
     width: 24px;
@@ -5152,7 +5278,7 @@ a:hover {
   .opportunities-filters {
     background-size: cover;
     background-position: bottom center;
-    height: 700px;
+    height: 660px;
   }
   .opportunities-filters > div {
     height: 100%;
@@ -5163,6 +5289,9 @@ a:hover {
   }
   .opportunities-filters > div > div > div:last-child h1 {
     color: #3B4C99;
+  }
+  .opportunities-filters > div > div > div:last-child > p {
+    font-size: 17px;
   }
   .opportunities-filters > div > div > div:last-child > div {
     padding-top: 25px;
@@ -5538,10 +5667,10 @@ a:hover {
     margin: 0 30px 144px;
   }
   .spotlight-about .carousel-control-prev {
-    left: 160px;
+    left: 183px;
   }
   .spotlight-about .carousel-control-next {
-    right: 140px;
+    right: 177px;
   }
   .spotlight-about > div > h2 {
     color: #454545;
@@ -5595,6 +5724,7 @@ a:hover {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    width: 300px;
   }
   .spotlight-about > div .billboard-inner > div > div > img {
     width: 25px;
@@ -5651,13 +5781,10 @@ a:hover {
     left: 115px;
   }
   .more-spotlights > div > div > div:last-child > div > div .user-id .btnnn {
-    left: ÷¿¿¿¿Æ143px;
-  }
-  .more-spotlights > div > div > div:last-child > div > div .user-id .btnnn {
-    left: ÷¿¿¿¿Æ143px;
+    left: 143px;
   }
   .more-spotlights > div > div > div:last-child > div > div .user-id .dropdown-menu {
-    height: 180px;
+    height: 200px;
     width: 233px;
   }
   .more-spotlights > div > div > div:last-child > div > div .user-id .Text {
@@ -5681,7 +5808,7 @@ a:hover {
   .more-cards > div > div {
     max-width: 33%;
   }
-  .more-cards > div > div.card {
+  .more-cards > div > div .inner-spotlight-link .card {
     width: 287px;
     height: 380px;
     -webkit-box-shadow: 0px 2px 40px whitesmoke;
@@ -5697,7 +5824,7 @@ a:hover {
     color: #454545;
     margin-bottom: 35px;
   }
-  .more-cards > div > div.card .spotlight-img {
+  .more-cards > div > div .inner-spotlight-link .card .spotlight-img {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -5708,25 +5835,25 @@ a:hover {
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
-  .more-cards > div > div.card .spotlight-img > img:first-of-type {
+  .more-cards > div > div .inner-spotlight-link .card .spotlight-img > img:first-of-type {
     width: 136px;
     height: 150px;
     -o-object-fit: contain;
        object-fit: contain;
   }
-  .more-cards > div > div.card .spotlight-img > img:last-of-type {
+  .more-cards > div > div .inner-spotlight-link .card .spotlight-img > img:last-of-type {
     height: 65px;
     width: 65px;
   }
-  .more-cards > div > div.card > p {
+  .more-cards > div > div .inner-spotlight-link .card > p {
     color: #454545;
     line-height: 1.2;
     font-size: 24px;
   }
-  .more-cards > div > div.card > p:last-of-type {
+  .more-cards > div > div .inner-spotlight-link .card > p:last-of-type {
     font-size: 22px;
   }
-  .more-cards > div > div.card > div > h5 {
+  .more-cards > div > div .inner-spotlight-link .card > div > h5 {
     font-size: 18px;
   }
   .inner-spotlight-qns > div > div {
@@ -5796,8 +5923,19 @@ a:hover {
     margin: 0;
     font-size: 28px;
   }
+  .project-image-div > img {
+    -o-object-fit: contain;
+       object-fit: contain;
+    width: 40%;
+  }
+  .project-image-div2 {
+    top: 260px;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
   .projects-billboard {
-    height: 780px;
+    height: auto;
+    margin-bottom: 55px;
   }
   .projects-billboard > img:first-of-type {
     height: 180px;
@@ -5807,7 +5945,7 @@ a:hover {
   }
   .projects-billboard > img:last-of-type {
     height: 385px;
-    top: 26%;
+    top: 40%;
     width: 100%;
   }
   .projects-billboard > div > div:first-child > img {
@@ -5930,6 +6068,7 @@ a:hover {
   }
   .opportunities-filters > div > div > div:last-child > p {
     font-size: 18px;
+    margin: 30px;
   }
   .opportunities-filters > div > div > div:last-child > div {
     padding-top: 40px;
@@ -6033,6 +6172,12 @@ a:hover {
     margin: auto;
     margin-bottom: 80px;
     font-family: "Rubik Bold";
+  }
+  .inner-about .carousel-control-next {
+    right: 110px;
+  }
+  .inner-about .carousel-control-prev {
+    left: 110px;
   }
 }
 

@@ -117,11 +117,7 @@ function filterToggle(type,cls){
   }
 }
 
-
-
-
-
-        
+     
 // load more button
   var numberOfItems=3;
   $('#myList .col-md-4:lt('+numberOfItems+')').fadeIn();
@@ -142,31 +138,78 @@ function filterToggle(type,cls){
   });
 
 
-  // load more button
-  var numberOfItems=8;
-  $('#List .cards:lt('+numberOfItems+')').fadeIn();
 
+  var Items=8;
+  $('#List .cards:lt('+Items+')').fadeIn();
 
-  $('#loadMore').click(function () {
-      numberOfItems = numberOfItems+8;
-      $('#List .cards:lt('+numberOfItems+')').fadeIn();
-              $('#loadMore').css("display", "none");
-      $('#showLess').css("display", "block");
+  $('#showmore').click(function () {
+      Items = Items+16;
+      $('#List .cards:lt('+Items+')').fadeIn();
+              $('#showmore').css("display", "none");
+      $('#showless').css("display", "block");
   });
 
-  $('#showLess').click(function () {
-      numberOfItems= numberOfItems-8;
-      $('#List .cards').not(':lt('+numberOfItems+')').fadeOut();
-      $('#loadMore').css("display", "block");
-      $('#showLess').css("display", "none");
+  $('#showless').click(function () {
+      Items= Items-8;
+      $('#List .cards').not(':lt('+Items+')').fadeOut();
+      $('#showmore').css("display", "block");
+      $('#showless').css("display", "none");
   });
 
 
-//rotate btn
-  $(".rotate").click(function () {
-    $(this).toggleClass("down");
-})
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  // var numberOfItems=8;
+  // $('#List .cards:lt('+numberOfItems+')').fadeIn();
+  // $('.more').click(function () {
+  //     numberOfItems = numberOfItems+6;
+  //     $('#List .cards:lt('+numberOfItems+')').fadeIn();
+  //             $('.more').css("display", "none");
+  //     $('.less').css("display", "block");
+  // });
+
+  // $('#showLess').click(function () {
+  //     numberOfItems= numberOfItems-6;
+  //     $('#List .cards').not(':lt('+numberOfItems+')').fadeOut();
+  //     $('.more').css("display", "block");
+  //     $('.less').css("display", "none");
+  // });
+
+// // load more function on filters
+//   $(document).ready(function () {
+//     $('#List .cards:lt(8)').fadeIn();
+//     $('#showLess').fadeOut();
+//     var items = 8;
+//     var shown =  4;
+//     $('#loadMore').click(function () {
+//         $('#showLess').fadeIn();
+//         shown = $('#List .cards:visible').length+8;
+//         if(shown< items) {
+//           $('#List .cards:lt('+shown+')').fadeIn(300);
+//         } else {
+//           $('#List .cards:lt('+items+')').fadeIn(300);
+//           $('#loadMore').fadeIn();
+//         }
+//     });
+//     $('#showLess').click(function () {
+//         $('#List .cards').not(':lt(8)').fadeOut(600);
+//         $('#loadMore').fadeIn();
+//         $('#showLess').fadeOut();
+//     });
+// });
 
 // var containerEl = document.querySelector('.myCard');
 // var mixer = mixitup(containerEl, {
@@ -174,3 +217,19 @@ function filterToggle(type,cls){
 //   sort: 'pamba:asc'
 // }
 // });
+
+// document.multiselect('#testSelect1')
+// .setCheckBoxClick("checkboxAll", function(target, args) {
+//   console.log("Checkbox 'Select All' was clicked and got value ", args.checked);
+// })
+// .setCheckBoxClick("1", function(target, args) {
+//   console.log("Checkbox for item with value '1' was clicked and got value ", args.checked);
+// });
+
+// function enable() {
+// document.multiselect('#testSelect1').setIsEnabled(true);
+// }
+
+// function disable() {
+// document.multiselect('#testSelect1').setIsEnabled(false);
+// }

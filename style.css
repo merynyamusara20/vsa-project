@@ -822,20 +822,13 @@ a:hover {
 }
 
 .team > div > div .card > img:last-of-type {
-  width: 233px;
+  width: 165px;
   height: 225px;
   position: absolute;
   -o-object-fit: cover;
      object-fit: cover;
   top: 40px;
-  left: 25%;
-}
-
-.team > div > div .card #human2 {
-  width: 164px;
-  height: 216px;
-  top: 49px;
-  left: 31%;
+  left: 35%;
 }
 
 .team > div > div .card > div > h3 {
@@ -1078,14 +1071,27 @@ a:hover {
   margin: 106px 0;
 }
 
-.spotlight-about > div .billboard-inner > p {
+.spotlight-about > div .billboard-inner .first-div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 260px;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.spotlight-about > div .billboard-inner .first-div > p {
   font-size: 18px;
   color: #454545;
-  margin: 38px 0;
   line-height: 1.3;
 }
 
-.spotlight-about > div .billboard-inner > div {
+.spotlight-about > div .billboard-inner > div:last-child {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1099,7 +1105,7 @@ a:hover {
   margin: auto;
 }
 
-.spotlight-about > div .billboard-inner > div > a {
+.spotlight-about > div .billboard-inner > div:last-child > a {
   font-size: 12px;
   background-color: #3B4C99;
   color: white;
@@ -1118,7 +1124,7 @@ a:hover {
   font-family: "Rubik Regular";
 }
 
-.spotlight-about > div .billboard-inner > div > div {
+.spotlight-about > div .billboard-inner > div:last-child > div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1131,33 +1137,33 @@ a:hover {
   width: 300px;
 }
 
-.spotlight-about > div .billboard-inner > div > div > img {
+.spotlight-about > div .billboard-inner > div:last-child > div > img {
   width: 25px;
   height: 25px;
 }
 
-.spotlight-about > div .billboard-inner > div > div > a {
+.spotlight-about > div .billboard-inner > div:last-child > div > a {
   color: #454545;
   margin: 0 10px;
   font-size: 15px;
   font-family: "Rubik Regular";
 }
 
-.spotlight-about > div .billboard-inner > div > div > li {
+.spotlight-about > div .billboard-inner > div:last-child > div > li {
   color: #454545;
   font-size: 15px;
   font-family: "Rubik Regular";
 }
 
-.spotlight-about > div .billboard-inner > div > div > li > a {
+.spotlight-about > div .billboard-inner > div:last-child > div > li > a {
   color: #454545;
 }
 
 .more-spotlights > div > div > div > img {
   height: 349px;
-  width: 376px;
-  -o-object-fit: contain;
-     object-fit: contain;
+  width: 340px;
+  -o-object-fit: cover;
+     object-fit: cover;
   margin-right: 45px;
 }
 
@@ -1248,7 +1254,7 @@ a:hover {
   margin-right: 9px;
 }
 
-.more-spotlights > div > div > div:last-child > div > div .user-id .dropdown-menu > div > a:focus i {
+.more-spotlights > div > div > div:last-child > div > div .user-id .dropdown-menu > div > a:hover i {
   background-color: #4157AF;
 }
 
@@ -1304,10 +1310,10 @@ a:hover {
 }
 
 .more-cards > div > div .inner-spotlight-link .card .spotlight-img > img:first-of-type {
-  width: 136px;
+  width: 128px;
   height: 150px;
-  -o-object-fit: contain;
-     object-fit: contain;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .more-cards > div > div .inner-spotlight-link .card .spotlight-img > img:last-of-type {
@@ -1444,6 +1450,24 @@ a:hover {
   color: #454545;
   margin-top: 40px;
   line-height: 1.3;
+}
+
+.inner-spotlight-qns2 > div {
+  padding: 0 100px;
+}
+
+.inner-spotlight-qns2 > div > h2 {
+  color: #454545;
+  margin-bottom: 30px;
+}
+
+.inner-spotlight-qns2 > div > p {
+  font-size: 18px;
+  line-height: 1.3;
+}
+
+.inner-spotlight-qns2 > div > a {
+  margin: 60px auto;
 }
 
 .inner-about {
@@ -1652,20 +1676,15 @@ a:hover {
   line-height: 1.4;
 }
 
-.about-blog-carousel > div .billboard-inner > div {
+.about-blog-carousel > div .billboard-inner .blog-link {
   margin: 110px auto;
   width: 720px;
 }
 
-.about-blog-carousel > div .billboard-inner > div > a {
+.about-blog-carousel > div .billboard-inner .blog-link > a {
   width: 134px;
   font-size: 18px;
   height: 38px;
-}
-
-.about-blog-carousel > div .billboard-inner > div > p {
-  font-size: 18px;
-  color: #454545;
 }
 
 .project-image-div {
@@ -2089,6 +2108,208 @@ a:hover {
 .filter-cards .btn-load:hover {
   color: #75a1de;
   border: 1px solid #75a1de;
+}
+
+.donate-billboard {
+  height: 772px;
+  background: url(images/opp-Rectangle.png);
+  background-position: center bottom;
+}
+
+.donate-billboard > div {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.donate-billboard > div > div > div:first-child > h1 > span {
+  color: rgba(228, 3, 3, 0.911);
+}
+
+.donate-billboard > div > div > div:first-child > p {
+  font-size: 15px;
+  margin: 15px 0;
+  color: #3B4C99;
+}
+
+.donate-billboard > div > div > div:first-child > img {
+  width: 762px;
+  height: 250px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  position: relative;
+  left: -216px;
+}
+
+.donate-billboard > div > div > div:last-child > form {
+  width: 450px;
+  height: 450px;
+  margin: auto;
+  background: white;
+  border-radius: 8px;
+}
+
+.donate-billboard > div > div > div:last-child > form > h3 {
+  height: 70px;
+  background-color: #3B4C99;
+  width: 100%;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: 'Rubik Medium';
+}
+
+.donate-billboard > div > div > div:last-child > form > div:first-of-type {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 30px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.donate-billboard > div > div > div:last-child > form > div:first-of-type > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.donate-billboard > div > div > div:last-child > form > div:first-of-type > div > a {
+  width: 120px;
+  height: 40px;
+  background-color: #75a1de;
+  color: #3B4C99;
+  font-family: "Rubik Regular";
+  font-size: 18px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 3px;
+  margin-bottom: 11px;
+}
+
+.donate-billboard > div > div > div:last-child > form > div:first-of-type > div > a:focus {
+  background-color: #3B4C99;
+  color: #75a1de;
+}
+
+.donate-billboard > div > div > div:last-child > form > div:last-of-type {
+  padding: 0 30px 30px;
+}
+
+.donate-billboard > div > div > div:last-child > form > div:last-of-type > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.donate-billboard > div > div > div:last-child > form > div:last-of-type > div > input {
+  width: 50%;
+  height: 50px;
+  border: .5px solid #DEDEDE;
+  padding-left: 17px;
+}
+
+.donate-billboard > div > div > div:last-child > form > div:last-of-type input::-webkit-input-placeholder {
+  color: #C2C2C2;
+}
+
+.donate-billboard > div > div > div:last-child > form > div:last-of-type input:-ms-input-placeholder {
+  color: #C2C2C2;
+}
+
+.donate-billboard > div > div > div:last-child > form > div:last-of-type input::-ms-input-placeholder {
+  color: #C2C2C2;
+}
+
+.donate-billboard > div > div > div:last-child > form > div:last-of-type input::placeholder {
+  color: #C2C2C2;
+}
+
+.donate-billboard > div > div > div:last-child > form > div:last-of-type > input {
+  width: 100%;
+  border: .5px solid #DEDEDE;
+  height: 50px;
+  padding-left: 17px;
+  margin-bottom: 30px;
+}
+
+.donate-billboard > div > div > div:last-child > form > div:last-of-type > a {
+  width: 100%;
+  height: 50px;
+  background-color: #3B4C99;
+  font-size: 18px;
+  color: white;
+  font-family: 'Rubik Medium';
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.donate-billboard > div > div > div:last-child > form > div:last-of-type > a:hover {
+  background-color: #75a1de;
+  color: #3B4C99;
+}
+
+.donate-chat > div {
+  text-align: center;
+  padding: 0 100px;
+}
+
+.donate-chat > div > p {
+  margin: 30px 0;
+  font-size: 24px;
+  font-family: "Rubik Regular";
+}
+
+.donate-chat > div > div {
+  margin: 90px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.donate-chat > div > div > a {
+  font-size: 24px;
+  color: #000000;
+  line-height: 1.2;
+  font-family: "Rubik Regular";
 }
 
 @media (max-width: 575px) {
@@ -2642,7 +2863,7 @@ a:hover {
   }
   .spotlight-about {
     text-align: center;
-    margin: 0 0 100px;
+    margin: 0 0 70px;
   }
   .spotlight-about .carousel-control-prev {
     left: 0;
@@ -2667,9 +2888,11 @@ a:hover {
     padding: 0;
     font-size: 20px;
   }
-  .spotlight-about > div .billboard-inner > p {
+  .spotlight-about > div .billboard-inner .first-div {
+    height: 290px;
+  }
+  .spotlight-about > div .billboard-inner .first-div > p {
     font-size: 15px;
-    margin: 20px 0;
   }
   .spotlight-about > div .billboard-inner hr {
     margin: 103px 0;
@@ -2678,31 +2901,31 @@ a:hover {
     font-size: 15px;
     margin: 30px 0;
   }
-  .spotlight-about > div .billboard-inner > div {
+  .spotlight-about > div .billboard-inner > div:last-child {
     width: 285px;
     margin: auto;
   }
-  .spotlight-about > div .billboard-inner > div > a {
+  .spotlight-about > div .billboard-inner > div:last-child > a {
     font-size: 8px;
     width: 80px;
     height: 25px;
   }
-  .spotlight-about > div .billboard-inner > div > div > img {
+  .spotlight-about > div .billboard-inner > div:last-child > div > img {
     width: 20px;
     height: 20px;
   }
-  .spotlight-about > div .billboard-inner > div > div > a {
+  .spotlight-about > div .billboard-inner > div:last-child > div > a {
     font-size: 8px;
   }
-  .spotlight-about > div .billboard-inner > div > div > li {
+  .spotlight-about > div .billboard-inner > div:last-child > div > li {
     font-size: 8px;
   }
   .more-spotlights > div > div > div {
     text-align: center;
   }
   .more-spotlights > div > div > div > img {
-    height: 300px;
-    width: 300px;
+    height: 100%;
+    width: 100%;
     margin-right: 0;
   }
   .more-spotlights > div > div > div:last-child {
@@ -2740,10 +2963,10 @@ a:hover {
     padding: 12px 0 0 12px;
   }
   .more-spotlights > div > div > div:last-child > div > div .user-id .dropdown-arrow {
-    left: 39px;
+    left: 49px;
   }
   .more-spotlights > div > div > div:last-child > div > div .user-id .btnnn {
-    left: 69px;
+    left: 75px;
   }
   .more-spotlights > div > div > div:last-child > div > div .user-id .dropdown-menu {
     top: 45px;
@@ -2761,7 +2984,7 @@ a:hover {
             flex-direction: column;
     height: auto;
     display: none;
-    left: -5%;
+    left: 0;
   }
   .more-cards > div {
     margin: 0 35px;
@@ -3212,6 +3435,91 @@ a:hover {
     margin-bottom: 22px;
     -o-object-fit: contain;
        object-fit: contain;
+  }
+  .donate-billboard {
+    height: auto;
+  }
+  .donate-billboard > div > div {
+    text-align: center;
+    padding-top: 140px;
+    width: 100%;
+  }
+  .donate-billboard > div > div > div:first-child > h1 {
+    font-size: 24px;
+  }
+  .donate-billboard > div > div > div:first-child > p {
+    font-size: 13px;
+    margin: 40px 0 0;
+    color: #3B4C99;
+  }
+  .donate-billboard > div > div > div:first-child > img {
+    width: 100%;
+    height: 150px;
+    left: 0;
+  }
+  .donate-billboard > div > div > div:last-child {
+    margin-top: 40px;
+  }
+  .donate-billboard > div > div > div:last-child > form {
+    width: 100%;
+    height: 400px;
+    margin-bottom: 30px;
+  }
+  .donate-billboard > div > div > div:last-child > form > div:first-of-type {
+    padding: 15px 20px 0;
+  }
+  .donate-billboard > div > div > div:last-child > form > div:first-of-type > div > a {
+    width: 70px;
+    height: 30px;
+    font-size: 12px;
+    margin-bottom: 12px;
+  }
+  .donate-billboard > div > div > div:last-child > form > div:last-of-type {
+    padding: 0 20px 20px;
+  }
+  .donate-billboard > div > div > div:last-child > form > div:last-of-type > div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 0px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .donate-billboard > div > div > div:last-child > form > div:last-of-type > div > input {
+    width: 100%;
+    height: 40px;
+    margin-bottom: 15px;
+  }
+  .donate-billboard > div > div > div:last-child > form > div:last-of-type > input {
+    height: 40px;
+    margin-bottom: 15px;
+  }
+  .donate-billboard > div > div > div:last-child > form > div:last-of-type > a {
+    height: 40px;
+    font-size: 15px;
+  }
+  .donate-chat > div {
+    padding: 0 15px;
+  }
+  .donate-chat > div > p {
+    font-size: 15px;
+  }
+  .donate-chat > div > div {
+    margin: 50px 0;
+  }
+  .donate-chat > div > div > a {
+    font-size: 15px;
+  }
+  .inner-spotlight-qns2 > div {
+    padding: 0 15px;
+  }
+  .inner-spotlight-qns2 > div > p {
+    font-size: 17px;
+  }
+  .inner-spotlight-qns2 > div > a {
+    margin: 30px auto;
   }
 }
 
@@ -3791,31 +4099,33 @@ a:hover {
     font-size: 15px;
     margin: 20px 0;
   }
-  .spotlight-about > div .billboard-inner > p {
-    font-size: 15px;
-    margin: 30px 0;
+  .spotlight-about > div .billboard-inner .first-div {
+    height: 200px;
   }
-  .spotlight-about > div .billboard-inner > div {
+  .spotlight-about > div .billboard-inner .first-div > p {
+    font-size: 15px;
+  }
+  .spotlight-about > div .billboard-inner > div:last-child {
     width: 320px;
     margin: auto;
   }
-  .spotlight-about > div .billboard-inner > div > a {
+  .spotlight-about > div .billboard-inner > div:last-child > a {
     font-size: 10px;
     width: 90px;
     height: 25px;
   }
-  .spotlight-about > div .billboard-inner > div > div > a {
+  .spotlight-about > div .billboard-inner > div:last-child > div > a {
     font-size: 10px;
   }
-  .spotlight-about > div .billboard-inner > div > div > li {
+  .spotlight-about > div .billboard-inner > div:last-child > div > li {
     font-size: 10px;
   }
   .more-spotlights > div > div > div {
     text-align: center;
   }
   .more-spotlights > div > div > div > img {
-    height: 300px;
-    width: 300px;
+    height: 100%;
+    width: 70%;
     margin-right: 0;
   }
   .more-spotlights > div > div > div:last-child {
@@ -4276,6 +4586,90 @@ a:hover {
     margin-bottom: 22px;
     -o-object-fit: contain;
        object-fit: contain;
+  }
+  .donate-billboard {
+    height: auto;
+  }
+  .donate-billboard > div > div {
+    text-align: center;
+    padding-top: 120px;
+    width: 100%;
+  }
+  .donate-billboard > div > div > div:first-child > h1 {
+    font-size: 22px;
+  }
+  .donate-billboard > div > div > div:first-child > p {
+    font-size: 14px;
+    margin: 20px 0;
+  }
+  .donate-billboard > div > div > div:first-child > img {
+    width: 100%;
+    height: 150px;
+    left: 0;
+  }
+  .donate-billboard > div > div > div:last-child {
+    margin-top: 40px;
+  }
+  .donate-billboard > div > div > div:last-child > form {
+    width: 100%;
+    height: 450px;
+    margin-bottom: 30px;
+  }
+  .donate-billboard > div > div > div:last-child > form > div:first-of-type {
+    padding: 30px 30px 0;
+  }
+  .donate-billboard > div > div > div:last-child > form > div:first-of-type > div > a {
+    width: 100px;
+    height: 30px;
+    font-size: 12px;
+    margin-bottom: 12px;
+  }
+  .donate-billboard > div > div > div:last-child > form > div:last-of-type {
+    padding: 30px;
+  }
+  .donate-billboard > div > div > div:last-child > form > div:last-of-type > div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 0px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .donate-billboard > div > div > div:last-child > form > div:last-of-type > div > input {
+    width: 100%;
+    height: 40px;
+    margin-bottom: 15px;
+  }
+  .donate-billboard > div > div > div:last-child > form > div:last-of-type > input {
+    height: 40px;
+    margin-bottom: 15px;
+  }
+  .donate-billboard > div > div > div:last-child > form > div:last-of-type > a {
+    height: 40px;
+    font-size: 15px;
+  }
+  .donate-chat > div {
+    padding: 0 15px;
+  }
+  .donate-chat > div > p {
+    font-size: 15px;
+  }
+  .donate-chat > div > div {
+    margin: 50px 0;
+  }
+  .donate-chat > div > div > a {
+    font-size: 15px;
+  }
+  .inner-spotlight-qns2 > div {
+    padding: 0 25px;
+  }
+  .inner-spotlight-qns2 > div > p {
+    font-size: 17px;
+  }
+  .inner-spotlight-qns2 > div > a {
+    margin: 30px auto;
   }
 }
 
@@ -4761,13 +5155,12 @@ a:hover {
     font-size: 18px;
     margin: 20px 0;
   }
-  .spotlight-about > div .billboard-inner > p {
+  .spotlight-about > div .billboard-inner .first-div > p {
     font-size: 18px;
     color: #454545;
-    margin: 38px 0;
     line-height: 1.3;
   }
-  .spotlight-about > div .billboard-inner > div {
+  .spotlight-about > div .billboard-inner > div:last-child {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -4780,7 +5173,7 @@ a:hover {
     width: 554px;
     margin: auto;
   }
-  .spotlight-about > div .billboard-inner > div > a {
+  .spotlight-about > div .billboard-inner > div:last-child > a {
     font-size: 12px;
     background-color: #3B4C99;
     color: white;
@@ -4798,7 +5191,7 @@ a:hover {
             justify-content: center;
     font-family: "Rubik Regular";
   }
-  .spotlight-about > div .billboard-inner > div > div {
+  .spotlight-about > div .billboard-inner > div:last-child > div {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -4810,22 +5203,22 @@ a:hover {
             align-items: center;
     width: 270px;
   }
-  .spotlight-about > div .billboard-inner > div > div > img {
+  .spotlight-about > div .billboard-inner > div:last-child > div > img {
     width: 25px;
     height: 25px;
   }
-  .spotlight-about > div .billboard-inner > div > div > a {
+  .spotlight-about > div .billboard-inner > div:last-child > div > a {
     color: #454545;
     margin: 0 10px;
     font-size: 15px;
     font-family: "Rubik Regular";
   }
-  .spotlight-about > div .billboard-inner > div > div > li {
+  .spotlight-about > div .billboard-inner > div:last-child > div > li {
     color: #454545;
     font-size: 15px;
     font-family: "Rubik Regular";
   }
-  .spotlight-about > div .billboard-inner > div > div > li > a {
+  .spotlight-about > div .billboard-inner > div:last-child > div > li > a {
     color: #454545;
   }
   .more-spotlights > div > div {
@@ -4840,8 +5233,8 @@ a:hover {
     margin-bottom: 40px;
   }
   .more-spotlights > div > div > div > img {
-    height: 349px;
-    width: 376px;
+    height: 100%;
+    width: 60%;
     -o-object-fit: contain;
        object-fit: contain;
     margin-right: 0;
@@ -5399,6 +5792,83 @@ a:hover {
     margin-bottom: 80px;
     font-family: "Rubik Bold";
   }
+  .donate-billboard {
+    height: auto;
+  }
+  .donate-billboard > div > div {
+    width: 100%;
+    padding-top: 150px;
+  }
+  .donate-billboard > div > div > div:first-child > h1 {
+    font-size: 28px;
+  }
+  .donate-billboard > div > div > div:first-child > p {
+    font-size: 15px;
+    margin: 20px 0;
+  }
+  .donate-billboard > div > div > div:first-child > img {
+    width: 120%;
+    height: 180px;
+    left: -53px;
+  }
+  .donate-billboard > div > div > div:last-child > form {
+    width: 100%;
+    height: auto;
+    margin-bottom: 50px;
+  }
+  .donate-billboard > div > div > div:last-child > form > div:first-of-type {
+    padding: 15px 15px 0;
+  }
+  .donate-billboard > div > div > div:last-child > form > div:first-of-type > div > a {
+    width: 75px;
+    height: 30px;
+    font-size: 12px;
+    margin-bottom: 12px;
+  }
+  .donate-billboard > div > div > div:last-child > form > div:last-of-type {
+    padding: 15px;
+  }
+  .donate-billboard > div > div > div:last-child > form > div:last-of-type > div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 0px;
+  }
+  .donate-billboard > div > div > div:last-child > form > div:last-of-type > div > input {
+    width: 50%;
+    height: 40px;
+    margin-bottom: 15px;
+  }
+  .donate-billboard > div > div > div:last-child > form > div:last-of-type > input {
+    height: 40px;
+    margin-bottom: 15px;
+  }
+  .donate-billboard > div > div > div:last-child > form > div:last-of-type > a {
+    height: 40px;
+    font-size: 15px;
+  }
+  .donate-chat > div {
+    padding: 0 15px;
+  }
+  .donate-chat > div > p {
+    font-size: 16px;
+    margin: 25px 0;
+  }
+  .donate-chat > div > div {
+    margin: 50px 0;
+  }
+  .donate-chat > div > div > a {
+    font-size: 16px;
+  }
+  .inner-spotlight-qns2 > div {
+    padding: 0 50px;
+  }
+  .inner-spotlight-qns2 > div > h2 {
+    font-size: 22px;
+  }
+  .inner-spotlight-qns2 > div > p {
+    font-size: 15px;
+  }
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
@@ -5677,13 +6147,15 @@ a:hover {
     padding: 0 50px;
     line-height: 1.2;
   }
-  .spotlight-about > div .billboard-inner > p {
+  .spotlight-about > div .billboard-inner .first-div {
+    padding: 0 50px;
+  }
+  .spotlight-about > div .billboard-inner .first-div > p {
     font-size: 18px;
     color: #454545;
-    margin: 38px 0;
     line-height: 1.3;
   }
-  .spotlight-about > div .billboard-inner > div {
+  .spotlight-about > div .billboard-inner > div:last-child {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -5696,7 +6168,7 @@ a:hover {
     width: 554px;
     margin: auto;
   }
-  .spotlight-about > div .billboard-inner > div > a {
+  .spotlight-about > div .billboard-inner > div:last-child > a {
     font-size: 12px;
     background-color: #3B4C99;
     color: white;
@@ -5714,7 +6186,7 @@ a:hover {
             justify-content: center;
     font-family: "Rubik Regular";
   }
-  .spotlight-about > div .billboard-inner > div > div {
+  .spotlight-about > div .billboard-inner > div:last-child > div {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -5726,30 +6198,30 @@ a:hover {
             align-items: center;
     width: 300px;
   }
-  .spotlight-about > div .billboard-inner > div > div > img {
+  .spotlight-about > div .billboard-inner > div:last-child > div > img {
     width: 25px;
     height: 25px;
   }
-  .spotlight-about > div .billboard-inner > div > div > a {
+  .spotlight-about > div .billboard-inner > div:last-child > div > a {
     color: #454545;
     margin: 0 10px;
     font-size: 15px;
     font-family: "Rubik Regular";
   }
-  .spotlight-about > div .billboard-inner > div > div > li {
+  .spotlight-about > div .billboard-inner > div:last-child > div > li {
     color: #454545;
     font-size: 15px;
     font-family: "Rubik Regular";
   }
-  .spotlight-about > div .billboard-inner > div > div > li > a {
+  .spotlight-about > div .billboard-inner > div:last-child > div > li > a {
     color: #454545;
   }
   .more-spotlights > div > div > div {
     margin-bottom: 40px;
   }
   .more-spotlights > div > div > div > img {
-    height: 349px;
-    width: 376px;
+    height: 100%;
+    width: 100%;
     -o-object-fit: contain;
        object-fit: contain;
     margin-right: 0;
@@ -6179,6 +6651,60 @@ a:hover {
   .inner-about .carousel-control-prev {
     left: 110px;
   }
+  .donate-billboard {
+    height: auto;
+  }
+  .donate-billboard > div > div {
+    width: 100%;
+    padding-top: 150px;
+    margin-bottom: 50px;
+  }
+  .donate-billboard > div > div > div:first-child > h1 {
+    font-size: 30px;
+  }
+  .donate-billboard > div > div > div:first-child > p {
+    font-size: 15px;
+    margin: 20px 0;
+  }
+  .donate-billboard > div > div > div:first-child > img {
+    width: 120%;
+    height: 180px;
+    left: -53px;
+  }
+  .donate-billboard > div > div > div:last-child > form {
+    width: 100%;
+    height: auto;
+    margin-bottom: 50px;
+  }
+  .donate-billboard > div > div > div:last-child > form > div:first-of-type {
+    padding: 15px 15px 0;
+  }
+  .donate-billboard > div > div > div:last-child > form > div:last-of-type {
+    padding: 15px;
+  }
+  .donate-billboard > div > div > div:last-child > form > div:last-of-type > input {
+    width: 50%;
+    height: 40px;
+    margin-bottom: 15px;
+  }
+  .donate-billboard > div > div > div:last-child > form > div:last-of-type > input {
+    height: 40px;
+    margin-bottom: 20px;
+    width: 100%;
+  }
+  .donate-chat > div > p {
+    font-size: 17px;
+    margin: 25px 0;
+  }
+  .donate-chat > div > div {
+    margin: 50px 0;
+  }
+  .donate-chat > div > div > a {
+    font-size: 17px;
+  }
+  .inner-spotlight-qns2 > div {
+    padding: 0 50px;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -6208,6 +6734,12 @@ a:hover {
   .projects-billboard > div > div:last-child > p {
     margin: 30px 0;
     font-size: 24px;
+  }
+  .donate-billboard > div > div > div:first-child > img {
+    left: -177px;
+  }
+  .donate-billboard > div > div > div:first-child > p {
+    margin: 25px 0;
   }
 }
 /*# sourceMappingURL=style.css.map */

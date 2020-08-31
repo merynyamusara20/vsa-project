@@ -142,18 +142,18 @@ function filterToggle(type,cls){
   var Items=8;
   $('#List .cards:lt('+Items+')').fadeIn();
 
-  $('#showmore').click(function () {
+  $('.showmore').click(function () {
       Items = Items+16;
       $('#List .cards:lt('+Items+')').fadeIn();
-              $('#showmore').css("display", "none");
-      $('#showless').css("display", "block");
+              $('.showmore').css("display", "none");
+      $('.showless').css("display", "block");
   });
 
-  $('#showless').click(function () {
+  $('.showless').click(function () {
       Items= Items-8;
       $('#List .cards').not(':lt('+Items+')').fadeOut();
-      $('#showmore').css("display", "block");
-      $('#showless').css("display", "none");
+      $('.showmore').css("display", "block");
+      $('.showless').css("display", "none");
   });
 
 

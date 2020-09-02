@@ -166,18 +166,6 @@ a:hover {
   height: 59px;
 }
 
-.header > div > a {
-  font-size: 17px;
-  text-decoration: none;
-  color: white;
-  padding-left: 11px;
-  font-family: "Rubik Regular";
-}
-
-.header > div > a:hover {
-  color: #CCE2FF;
-}
-
 .header > input {
   position: absolute;
   visibility: hidden;
@@ -194,7 +182,7 @@ a:hover {
 }
 
 .header > ul > li {
-  padding: 0 30px;
+  padding: 0 25px;
   color: white;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -209,7 +197,7 @@ a:hover {
   -webkit-transition: 0.4s;
   transition: 0.4s;
   text-decoration: none;
-  font-size: 18px;
+  font-size: 16px;
   font-family: "Rubik Regular";
   display: -webkit-box;
   display: -ms-flexbox;
@@ -220,8 +208,8 @@ a:hover {
 }
 
 .header > ul > li > a > i {
-  font-size: 7px;
-  margin-right: 20px;
+  font-size: 6px;
+  margin-right: 12px;
 }
 
 .header > ul > li > a:hover {
@@ -234,7 +222,7 @@ a:hover {
 }
 
 .header > ul > li:last-of-type > a {
-  font-size: 19px;
+  font-size: 18px;
   height: 50px;
   width: 149px;
   display: -webkit-box;

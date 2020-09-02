@@ -161,9 +161,30 @@ a:hover {
   z-index: 8888888;
 }
 
+.header > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .header > div > a:first-of-type > img {
   width: 60px;
   height: 59px;
+}
+
+.header > div > a {
+  font-size: 15px;
+  text-decoration: none;
+  color: white;
+  padding-left: 11px;
+  font-family: "Rubik Regular";
+}
+
+.header > div > a:hover {
+  color: #CCE2FF;
 }
 
 .header > input {
@@ -179,6 +200,10 @@ a:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.header > ul .icon-display-none {
+  display: none;
 }
 
 .header > ul > li {
@@ -197,7 +222,7 @@ a:hover {
   -webkit-transition: 0.4s;
   transition: 0.4s;
   text-decoration: none;
-  font-size: 16px;
+  font-size: 17px;
   font-family: "Rubik Regular";
   display: -webkit-box;
   display: -ms-flexbox;
@@ -222,7 +247,7 @@ a:hover {
 }
 
 .header > ul > li:last-of-type > a {
-  font-size: 18px;
+  font-size: 19px;
   height: 50px;
   width: 149px;
   display: -webkit-box;
@@ -2451,9 +2476,12 @@ a:hover {
             flex-direction: column;
     z-index: 999;
   }
+  .header > ul .icon-display-none {
+    display: block;
+  }
   .header > ul > li > a {
     display: block;
-    padding: 30px;
+    padding: 25px;
     color: #CCE2FF;
     font-size: 18px;
   }

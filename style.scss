@@ -71,20 +71,21 @@ a{text-decoration: none;outline: 0;box-shadow: none;;
 	.active-4{background-color:$darkblue !important;}
 // START NAVBAR
 .header{height: 90px;background-color:$darkblue;padding:0 50px;width: 100%;@include flex-between();position:fixed;z-index: 8888888;;
-	>div{
+	>div{display: flex;align-items: center;;
 	>a:first-of-type{>img{width:60px;height: 59px}}
-	// >a{font-size: 15px;text-decoration: none;color: white;padding-left: 11px;font-family: $regular;
-	// 	&:hover{color:$lightblue ;}
-	// }
+	>a{font-size: 15px;text-decoration: none;color: white;padding-left: 11px;font-family: $regular;
+		&:hover{color:$lightblue ;}
+	}
      }
 	>input{position: absolute;visibility: hidden;z-index: -1111;}
 	>ul{display: flex;align-items: center;
+		.icon-display-none{display: none;}
 	   >li{padding: 0 25px;color: $white;align-items: center;justify-content: center;
-		   >a{color:$white;transition:0.4s;text-decoration: none;font-size: 16px;font-family: $regular;display: flex;align-items: center;
+		   >a{color:$white;transition:0.4s;text-decoration: none;font-size: 17px;font-family: $regular;display: flex;align-items: center;
 			>i{font-size: 6px;margin-right: 12px;}
 			  &:hover{color:$lightblue;text-decoration: none;}}
 			  &:last-of-type{padding: 0 10px;
-				>a{font-size: 18px;height: 50px;width: 149px;@include flex();background-color:#4157AF;border-radius: 6px; }
+				>a{font-size: 19px;height: 50px;width: 149px;@include flex();background-color:#4157AF;border-radius: 6px; }
 			}
 	        }
   }
@@ -696,9 +697,10 @@ a{text-decoration: none;outline: 0;box-shadow: none;;
 // start navbar
 .header{padding: 0 25px;
 	>input:checked ~ .menu{right: 0;z-index: 123;}
-	>ul{position:fixed;width: 100%;height:100%;background-color:$darkblue;right:-100% ;top: 0;padding: 80px 0;transition: 0.7s;flex-direction: column;z-index: 999;;
+	>ul{position:fixed;width: 100%;height:100%;background-color:$darkblue;right:-100% ;top: 0;padding: 80px 0;transition: 0.7s;flex-direction: column;z-index: 999;
+		.icon-display-none{display:block;}
 		>li{
-		>a{display: block;padding: 30px;color:$lightblue;font-size: 18px;
+		>a{display: block;padding: 25px;color:$lightblue;font-size: 18px;
 			>i{display: none;}
 			&:hover{color:$blue;}}
 			&:last-of-type{padding: 0 10px;

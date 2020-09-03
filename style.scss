@@ -1227,9 +1227,10 @@ a{text-decoration: none;outline: 0;box-shadow: none;;
 // start navbar
 .header{padding: 0 25px;
 	>input:checked ~ .menu{right: 0;z-index: 123;}
-	>ul{position:fixed;width: 50%;height:100%;background-color:$darkblue;right:-100% ;top: 0;padding: 80px 0;transition: 0.7s;flex-direction: column;z-index: 999;;
+	>ul{position:fixed;width: 50%;height:100%;background-color:$darkblue;right:-100% ;top: 0;padding: 50px 0;transition: 0.7s;flex-direction: column;z-index: 999;
+		.icon-display-none{display:block;}
 		>li{
-		>a{display: block;padding: 30px;color:$lightblue;font-size: 18px;
+		>a{display: block;padding: 12px 30px;color:$lightblue;font-size: 18px;
 			>i{display: none;}
 			&:hover{color:$blue;}}
 			&:last-of-type{padding: 0 10px;
@@ -1345,7 +1346,7 @@ a{text-decoration: none;outline: 0;box-shadow: none;;
 				>p{padding-right:0;font-size: 18px;}
 			}
 			>div:last-child{
-				>img:last-of-type{top: -64%;}
+				>img:last-of-type{top: -70%;}
 				>img:first-of-type{width:100%;height: 380px;position: relative;top: 60px;left:0;margin: 10px 0 ;object-fit: contain;}
 			}
 		}
@@ -1744,20 +1745,18 @@ a{text-decoration: none;outline: 0;box-shadow: none;;
 	h3{font-size: 18px;}
 	p{font-size: 18px;}
 	// start navbar
-.header{padding: 0 25px;
-	>input:checked ~ .menu{right: 0;z-index: 123;}
-	>ul{position:fixed;width: 50%;height:100%;background-color:$darkblue;right:-100% ;top: 0;padding: 80px 0;transition: 0.7s;flex-direction: column;z-index: 999;justify-content: end;;
-		>li{list-style: none;
-		>a{display: block;padding: 30px;color:$lightblue;font-size: 18px;;
-			&:hover{color:$blue;}}
-			&:last-of-type{padding: 0 10px;
-				>a{font-size: 18px;height: 40px;width: 149px;padding: 22px;}
-			}
-	 	}
-		}
-	.show-menu-btn, .hide-menu-btn{display: block;color: $blue;}  
-	.hide-menu-btn{position: absolute;top: 35px;right: 28px;color: $blue;}
-    }
+	.header{padding:0 15px;
+		>div{
+		   >a{font-size: 14px;padding-left: 8px;}}
+		>ul{
+		   >li {padding: 0 8px;
+			   >a{font-size: 14px;}
+				  &:last-of-type{
+					>a{font-size: 16px;width: 90px;height: 38px; }
+				}
+		   }
+	   }
+	}
 // START BILLBOARD
 .billboard{height: 600px;padding-top: 160px;
 	>h1{font-size: 28px;}
@@ -1863,7 +1862,7 @@ a{text-decoration: none;outline: 0;box-shadow: none;;
 			}
 			>div:last-child{position: relative;
 				>img:first-of-type{width: 320px;height: 300px;position: absolute;z-index: 2;top: 0%;left: -6%;}
-				>img:last-of-type{width: 400px;height: 510px;top: -35%;left: 24%;}
+				>img:last-of-type{width: 400px;height: 510px;top: -39%;left: 24%;}
 			}
 		}
 	}
@@ -1892,7 +1891,7 @@ a{text-decoration: none;outline: 0;box-shadow: none;;
 		>div{
 			.card{width: 450px;margin: 15px;height: 515px;
 			>img:first-of-type{width: 100%;height: 230px;}
-			>img:last-of-type{width:190px;height:180px;top: 50px;}
+			>img:last-of-type{width:190px;height:180px;top: 50px;left: 20%;}
 			#human2{width: 140px;height:181px;}
 			>div{
 				>h3{text-align: center;}
@@ -2371,6 +2370,7 @@ p{font-size: 19px;}
 		>div{
 			.card{width: 450px;height:570px;
 			>img:first-of-type{width:100%;}
+			>img:last-of-type{left: 32%;}
 			>div{
 				>p{margin: 15px 0 20px;}
 			    }
@@ -2681,6 +2681,7 @@ p{font-size: 19px;}
 		
 	}
 }
+.team > div > div .card > img:last-of-type {left: 32.5%;}
 .donate-billboard > div > div > div:first-child > img {left: -177px;}
 .donate-billboard > div > div > div:first-child > p {margin: 25px 0;}
 }

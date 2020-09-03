@@ -3705,7 +3705,7 @@ a:hover {
     background-color: #3B4C99;
     right: -100%;
     top: 0;
-    padding: 80px 0;
+    padding: 50px 0;
     -webkit-transition: 0.7s;
     transition: 0.7s;
     -webkit-box-orient: vertical;
@@ -3714,9 +3714,12 @@ a:hover {
             flex-direction: column;
     z-index: 999;
   }
+  .header > ul .icon-display-none {
+    display: block;
+  }
   .header > ul > li > a {
     display: block;
-    padding: 30px;
+    padding: 12px 30px;
     color: #CCE2FF;
     font-size: 18px;
   }
@@ -4032,7 +4035,7 @@ a:hover {
     font-size: 18px;
   }
   .about-billboard > div > div > div:last-child > img:last-of-type {
-    top: -64%;
+    top: -70%;
   }
   .about-billboard > div > div > div:last-child > img:first-of-type {
     width: 100%;
@@ -4848,61 +4851,22 @@ a:hover {
     font-size: 18px;
   }
   .header {
-    padding: 0 25px;
+    padding: 0 15px;
   }
-  .header > input:checked ~ .menu {
-    right: 0;
-    z-index: 123;
-  }
-  .header > ul {
-    position: fixed;
-    width: 50%;
-    height: 100%;
-    background-color: #3B4C99;
-    right: -100%;
-    top: 0;
-    padding: 80px 0;
-    -webkit-transition: 0.7s;
-    transition: 0.7s;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    z-index: 999;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: end;
+  .header > div > a {
+    font-size: 14px;
+    padding-left: 8px;
   }
   .header > ul > li {
-    list-style: none;
+    padding: 0 8px;
   }
   .header > ul > li > a {
-    display: block;
-    padding: 30px;
-    color: #CCE2FF;
-    font-size: 18px;
-  }
-  .header > ul > li > a:hover {
-    color: #75a1de;
-  }
-  .header > ul > li:last-of-type {
-    padding: 0 10px;
+    font-size: 14px;
   }
   .header > ul > li:last-of-type > a {
-    font-size: 18px;
-    height: 40px;
-    width: 149px;
-    padding: 22px;
-  }
-  .header .show-menu-btn, .header .hide-menu-btn {
-    display: block;
-    color: #75a1de;
-  }
-  .header .hide-menu-btn {
-    position: absolute;
-    top: 35px;
-    right: 28px;
-    color: #75a1de;
+    font-size: 16px;
+    width: 90px;
+    height: 38px;
   }
   .billboard {
     height: 600px;
@@ -5197,7 +5161,7 @@ a:hover {
   .about-billboard > div > div > div:last-child > img:last-of-type {
     width: 400px;
     height: 510px;
-    top: -35%;
+    top: -39%;
     left: 24%;
   }
   .stem > div > div > div:first-child > img:first-of-type {
@@ -5242,6 +5206,7 @@ a:hover {
     width: 190px;
     height: 180px;
     top: 50px;
+    left: 20%;
   }
   .team > div > div .card #human2 {
     width: 140px;
@@ -6255,6 +6220,9 @@ a:hover {
   .team > div > div .card > img:first-of-type {
     width: 100%;
   }
+  .team > div > div .card > img:last-of-type {
+    left: 32%;
+  }
   .team > div > div .card > div > p {
     margin: 15px 0 20px;
   }
@@ -6908,6 +6876,9 @@ a:hover {
   .projects-billboard > div > div:last-child > p {
     margin: 30px 0;
     font-size: 24px;
+  }
+  .team > div > div .card > img:last-of-type {
+    left: 32.5%;
   }
   .donate-billboard > div > div > div:first-child > img {
     left: -177px;
